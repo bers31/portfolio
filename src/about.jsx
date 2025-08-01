@@ -459,7 +459,7 @@ const About = () => {
           {/* Call to Action */}
           <div className="text-center">
             <a
-              href="https://bit.ly/bernardo-portfolio"
+              href="https://bit.ly/bernardo-project"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl group"

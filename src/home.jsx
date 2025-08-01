@@ -229,7 +229,7 @@ const Home = () => {
             <div className={`mb-12 transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <button
-                  onClick={() => window.open("https://bit.ly/bernardo-portfolio", "_blank")}
+                  onClick={() => window.open("https://bit.ly/bernardo-project", "_blank")}
                   className="group px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105 flex items-center space-x-2"
                 >
                   <Play className="w-5 h-5 group-hover:scale-110 transition-transform" />
@@ -267,7 +267,7 @@ const Home = () => {
                 <a href="https://linkedin.com/in/bernardo-sunia/" className="group p-3 bg-gray-800/50 rounded-full border border-gray-700 hover:border-blue-500 transition-all duration-300 hover:bg-blue-500/10">
                   <Linkedin className="w-6 h-6 text-gray-400 group-hover:text-blue-400 transition-colors" />
                 </a>
-                <a href="https://bit.ly/bernardo-portfolio" className="group p-3 bg-gray-800/50 rounded-full border border-gray-700 hover:border-purple-500 transition-all duration-300 hover:bg-purple-500/10">
+                <a href="https://bit.ly/bernardo-project" className="group p-3 bg-gray-800/50 rounded-full border border-gray-700 hover:border-purple-500 transition-all duration-300 hover:bg-purple-500/10">
                   <ExternalLink className="w-6 h-6 text-gray-400 group-hover:text-purple-400 transition-colors" />
                 </a>
                 <a href="https://wa.me/6289520501678" className="group p-3 bg-gray-800/50 rounded-full border border-gray-700 hover:border-green-500 transition-all duration-300 hover:bg-green-500/10">
@@ -475,7 +475,7 @@ const Home = () => {
               </button>
 
               <button
-                onClick={() => window.open("https://bit.ly/bernardo-portfolio", "_blank")}
+                onClick={() => window.open("https://bit.ly/bernardo-project", "_blank")}
                 className="group px-8 py-4 border-2 border-purple-500 rounded-full font-semibold hover:bg-purple-500 hover:border-purple-600 transition-all duration-300 flex items-center justify-center space-x-2"
               >
                 <ExternalLink className="w-5 h-5 group-hover:scale-110 transition-transform" />

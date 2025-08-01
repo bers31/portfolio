@@ -606,7 +606,7 @@ const ExperiencePage = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
-                onClick={() => window.open("https://bit.ly/bernardo-portfolio", "_blank")} 
+                onClick={() => window.open("https://bit.ly/bernardo-project", "_blank")} 
                 className="px-8 py-3 bg-gradient-to-r from-purple-500 to-pink-600 rounded-lg font-semibold hover:from-purple-600 hover:to-pink-700 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center"
               >
                 <ExternalLink className="w-5 h-5 mr-2" />

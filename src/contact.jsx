@@ -270,7 +270,7 @@ const Contact = () => {
               <span>Get In Touch</span>
             </a>
             <a
-              href="https://bit.ly/bernardo-portfolio"
+              href="https://bit.ly/bernardo-project"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gray-800 hover:bg-gray-700 px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-105 flex items-center space-x-2 border border-gray-600 hover:border-gray-500"
@@ -497,7 +497,7 @@ const Contact = () => {
                   <ExternalLink className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://bit.ly/bernardo-portfolio"
+                  href="https://bit.ly/bernardo-project"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 px-6 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 flex items-center justify-between shadow-lg hover:shadow-xl"
@@ -569,7 +569,7 @@ const Contact = () => {
               <Github className="w-6 h-6" />
             </a>
             <a 
-              href="https://bit.ly/bernardo-portfolio" 
+              href="https://bit.ly/bernardo-project" 
               className="text-gray-400 hover:text-blue-400 transition-colors hover:scale-110 transform duration-300"
             >
               <ExternalLink className="w-6 h-6" />
