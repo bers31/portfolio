@@ -128,34 +128,6 @@ const ProjectsPage = () => {
     },
     {
       id: 3,
-      title: "Advanced Information Retrieval System",
-      subtitle: "Multilingual Neural Search Engine",
-      period: "Aug 2024 - Dec 2024",
-      organization: "Diponegoro University",
-      category: "AI/ML",
-      featured: true,
-      image: foto3,
-      technologies: ["Python", "mBERT", "PyTorch", "FAISS", "Streamlit", "Hugging Face"],
-      description: "Built a cutting-edge multilingual neural information retrieval system using fine-tuned mBERT, enabling semantic search across Indonesian and English documents with unprecedented speed and accuracy.",
-      highlights: [
-        "Achieved sub-second query response times with FAISS optimization",
-        "Significant performance uplift over traditional BM25 baselines",
-        "Implemented dynamic embedding visualizations and similarity heatmaps",
-        "Ensured reproducibility through Docker containerization",
-        "Fine-tuned mBERT for cross-lingual semantic understanding"
-      ],
-      impact: {
-        responseTime: "<1s",
-        languages: "2",
-        accuracy: "High"
-      },
-      gradient: "from-green-600 via-emerald-600 to-teal-500",
-      bgPattern: "bg-gradient-to-br from-green-900/20 via-emerald-900/20 to-teal-900/20",
-      githubUrl: "https://github.com/bers31/bernardo.github.io/tree/main/Advance_Information_Retrieval_System",
-      liveUrl: "https://bers31.github.io/bernardo.github.io/Advance_Information_Retrieval_System/"
-    },
-    {
-      id: 4,
       title: "Financial Reporting Application",
       subtitle: "Enterprise-Grade Financial Management System",
       period: "Dec 2024 - Feb 2025",
@@ -181,6 +153,34 @@ const ProjectsPage = () => {
       bgPattern: "bg-gradient-to-br from-orange-900/20 via-red-900/20 to-pink-900/20",
       githubUrl: "https://github.com/bers31/bernardo.github.io/tree/main/Financial_Reporting_Application",
       liveUrl: "https://bers31.github.io/bernardo.github.io/Financial_Reporting_Application/"
+    },
+    {
+      id: 4,
+      title: "Advanced Information Retrieval System",
+      subtitle: "Multilingual Neural Search Engine",
+      period: "Aug 2024 - Dec 2024",
+      organization: "Diponegoro University",
+      category: "AI/ML",
+      featured: true,
+      image: foto3,
+      technologies: ["Python", "mBERT", "PyTorch", "FAISS", "Streamlit", "Hugging Face"],
+      description: "Built a cutting-edge multilingual neural information retrieval system using fine-tuned mBERT, enabling semantic search across Indonesian and English documents with unprecedented speed and accuracy.",
+      highlights: [
+        "Achieved sub-second query response times with FAISS optimization",
+        "Significant performance uplift over traditional BM25 baselines",
+        "Implemented dynamic embedding visualizations and similarity heatmaps",
+        "Ensured reproducibility through Docker containerization",
+        "Fine-tuned mBERT for cross-lingual semantic understanding"
+      ],
+      impact: {
+        responseTime: "<1s",
+        languages: "2",
+        accuracy: "High"
+      },
+      gradient: "from-green-600 via-emerald-600 to-teal-500",
+      bgPattern: "bg-gradient-to-br from-green-900/20 via-emerald-900/20 to-teal-900/20",
+      githubUrl: "https://github.com/bers31/bernardo.github.io/tree/main/Advance_Information_Retrieval_System",
+      liveUrl: "https://bers31.github.io/bernardo.github.io/Advance_Information_Retrieval_System/"
     },
     {
       id: 5,
@@ -212,6 +212,146 @@ const ProjectsPage = () => {
     },
     {
       id: 6,
+      title: "Advanced Customer Segmentation System",
+      subtitle: "Supervised Learning Customer Analytics",
+      period: "Aug 2024 - Dec 2024",
+      organization: "Diponegoro University",
+      category: "Data Science",
+      featured: false,
+      image: foto9,
+      technologies: ["Python", "Random Forest", "SVM", "XGBoost", "k-NN", "Streamlit"],
+      description: "Engineered a sophisticated customer segmentation system using advanced supervised learning algorithms, achieving highly actionable segmentation that empowers businesses to target customer groups effectively.",
+      highlights: [
+        "Implemented cutting-edge models including Random Forest, SVM, XGBoost, and k-NN",
+        "Achieved significant improvement in segmentation accuracy and operational efficiency",
+        "Developed interactive Streamlit interface for dynamic exploration",
+        "Performed rigorous model evaluation and hyperparameter tuning",
+        "Integrated real-time customer data analysis features"
+      ],
+      impact: {
+        accuracy: "95%",
+        models: "4",
+        efficiency: "+40%"
+      },
+      gradient: "from-cyan-600 via-blue-600 to-indigo-500",
+      bgPattern: "bg-gradient-to-br from-cyan-900/20 via-blue-900/20 to-indigo-900/20",
+      githubUrl: "https://github.com/bers31/bernardo.github.io/tree/main/Supervised_Learning_Project",
+      liveUrl: "https://bers31.github.io/bernardo.github.io/Supervised_Learning_Project/"
+    },
+    {
+      id: 7,
+      title: "Greenhouse Gas Emissions Prediction",
+      subtitle: "Environmental Data Analytics & Forecasting",
+      period: "Feb 2024 - Dec 2024",
+      organization: "Environmental Research Project",
+      category: "Data Science",
+      featured: false,
+      image: foto11,
+      technologies: ["Python", "R", "Excel", "Time Series Analysis", "Regression"],
+      description: "Built a predictive model for forecasting greenhouse gas emissions over the next decade, delivering insights that support policy development for emissions reduction and environmental planning.",
+      highlights: [
+        "Collected and cleaned extensive environmental datasets for accurate analysis",
+        "Employed trend analysis and time-series techniques for decade-long predictions",
+        "Achieved high reliability and alignment with environmental data trends",
+        "Collaborated with environmental experts to refine model parameters",
+        "Provided actionable insights through comprehensive data visualizations"
+      ],
+      impact: {
+        forecast: "10 years",
+        accuracy: "High",
+        datasets: "Multiple"
+      },
+      gradient: "from-green-600 via-emerald-600 to-teal-500",
+      bgPattern: "bg-gradient-to-br from-green-900/20 via-emerald-900/20 to-teal-900/20",
+      githubUrl: "https://github.com/bers31/bernardo.github.io/tree/main/Greenhouse_Gas_Emissions_Prediction%26Analysis",
+      liveUrl: "https://bers31.github.io/bernardo.github.io/Greenhouse_Gas_Emissions_Prediction%26Analysis/"
+    },
+    {
+      id: 8,
+      title: "Student Information System (SI-MAS)",
+      subtitle: "Academic Management Platform",
+      period: "Feb 2024 - Dec 2024",
+      organization: "Diponegoro University",
+      category: "Full Stack",
+      featured: false,
+      image: foto8,
+      technologies: ["Laravel", "MySQL", "PHP", "Bootstrap", "jQuery"],
+      description: "Developed an integrated web-based Student Information System serving over 1,000 students and 100 academic advisors with streamlined course registration and academic records management.",
+      highlights: [
+        "Served 1,000+ students and 100+ academic advisors efficiently",
+        "Reduced course registration time by 30% through automation",
+        "Implemented secure authentication and data protection",
+        "Created automated validation processes reducing human error",
+        "Established comprehensive documentation and training materials"
+      ],
+      impact: {
+        users: "1000+",
+        timeReduction: "30%",
+        accuracy: "99%"
+      },
+      gradient: "from-blue-600 via-indigo-600 to-purple-500",
+      bgPattern: "bg-gradient-to-br from-blue-900/20 via-indigo-900/20 to-purple-900/20",
+      githubUrl: "https://github.com/bers31/bernardo.github.io/tree/main/Student_Academic_Information_System",
+      liveUrl: "https://bers31.github.io/bernardo.github.io/Student_Academic_Information_System/"
+    },
+    {
+      id: 9,
+      title: "Custom Search Engine with VSM & LSI",
+      subtitle: "Advanced Information Retrieval System",
+      period: "Feb 2024 - Aug 2024",
+      organization: "Diponegoro University",
+      category: "AI/ML",
+      featured: true,
+      image: foto10,
+      technologies: ["Python", "Streamlit", "Sastrawi", "NLTK", "scikit-learn", "TF-IDF"],
+      description: "Designed and deployed an interactive search engine showcasing advanced document retrieval techniques using both Vector Space Model (VSM) and Latent Semantic Indexing (LSI) for Indonesian text processing.",
+      highlights: [
+        "Engineered robust text-preprocessing pipeline with Indonesian stopword removal",
+        "Implemented Vector Space Model with TF and TF-IDF weighting schemes",
+        "Extended retrieval capabilities through LSI using Truncated SVD",
+        "Achieved notable improvements in top-of-list relevance using Accuracy@K metrics",
+        "Developed dynamic visualizations of topic distributions and document similarity"
+      ],
+      impact: {
+        topics: "10",
+        accuracy: "92%",
+        languages: "ID"
+      },
+      gradient: "from-emerald-600 via-teal-600 to-cyan-500",
+      bgPattern: "bg-gradient-to-br from-emerald-900/20 via-teal-900/20 to-cyan-900/20",
+      githubUrl: "https://github.com/bers31/bernardo.github.io/tree/main/Custom_Search_Engine_With_VSM%26LSI",
+      liveUrl: "https://bers31.github.io/bernardo.github.io/Custom_Search_Engine_With_VSM%26LSI/"
+    },
+    {
+      id: 10,
+      title: "3D Minecraft Game Development",
+      subtitle: "Interactive 3D Gaming Experience",
+      period: "Jan 2024 - Jun 2024",
+      organization: "Diponegoro University",
+      category: "Game Development",
+      featured: false,
+      image: foto7,
+      technologies: ["C++", "OpenGL", "Matrix Math", "3D Graphics"],
+      description: "Designed and developed a 3D game inspired by Minecraft featuring a bear character in a fully immersive 3D environment with interactive objects and dynamic world generation.",
+      highlights: [
+        "Created dynamic 3D world with interactive objects using OpenGL",
+        "Implemented matrix manipulation for efficient 3D rendering",
+        "Designed intuitive control system for immersive gameplay",
+        "Optimized performance for smooth gameplay on various hardware",
+        "Integrated user feedback to enhance gaming experience"
+      ],
+      impact: {
+        fps: "60+",
+        objects: "1000+",
+        performance: "Optimized"
+      },
+      gradient: "from-green-600 via-lime-600 to-emerald-500",
+      bgPattern: "bg-gradient-to-br from-green-900/20 via-lime-900/20 to-emerald-900/20",
+      githubUrl: "https://github.com/bers31/bernardo.github.io/tree/main/3D_Minecraft_Development",
+      liveUrl: "https://bers31.github.io/bernardo.github.io/3D_Minecraft_Development/"
+    },
+    {
+      id: 11,
       title: "YC Electric E-Commerce Platform",
       subtitle: "Custom E-Commerce Solution",
       period: "Jan 2022 - Jan 2024",
@@ -237,146 +377,6 @@ const ProjectsPage = () => {
       bgPattern: "bg-gradient-to-br from-yellow-900/20 via-orange-900/20 to-red-900/20",
       githubUrl: "https://github.com/bers31/bernardo.github.io/tree/main/Custom_E_Commerce_Website",
       liveUrl: "https://bers31.github.io/bernardo.github.io/Custom_E_Commerce_Website/"
-    },
-    {
-      id: 7,
-      title: "3D Minecraft Game Development",
-      subtitle: "Interactive 3D Gaming Experience",
-      period: "2023 - 2024",
-      organization: "Personal Project",
-      category: "Game Development",
-      featured: false,
-      image: foto7,
-      technologies: ["C++", "OpenGL", "Matrix Math", "3D Graphics"],
-      description: "Designed and developed a 3D game inspired by Minecraft featuring a bear character in a fully immersive 3D environment with interactive objects and dynamic world generation.",
-      highlights: [
-        "Created dynamic 3D world with interactive objects using OpenGL",
-        "Implemented matrix manipulation for efficient 3D rendering",
-        "Designed intuitive control system for immersive gameplay",
-        "Optimized performance for smooth gameplay on various hardware",
-        "Integrated user feedback to enhance gaming experience"
-      ],
-      impact: {
-        fps: "60+",
-        objects: "1000+",
-        performance: "Optimized"
-      },
-      gradient: "from-green-600 via-lime-600 to-emerald-500",
-      bgPattern: "bg-gradient-to-br from-green-900/20 via-lime-900/20 to-emerald-900/20",
-      githubUrl: "https://github.com/bers31/bernardo.github.io/tree/main/3D_Minecraft_Development",
-      liveUrl: "https://bers31.github.io/bernardo.github.io/3D_Minecraft_Development/"
-    },
-    {
-      id: 8,
-      title: "Student Information System (SI-MAS)",
-      subtitle: "Academic Management Platform",
-      period: "2023 - 2024",
-      organization: "University Project",
-      category: "Full Stack",
-      featured: false,
-      image: foto8,
-      technologies: ["Laravel", "MySQL", "PHP", "Bootstrap", "jQuery"],
-      description: "Developed an integrated web-based Student Information System serving over 1,000 students and 100 academic advisors with streamlined course registration and academic records management.",
-      highlights: [
-        "Served 1,000+ students and 100+ academic advisors efficiently",
-        "Reduced course registration time by 30% through automation",
-        "Implemented secure authentication and data protection",
-        "Created automated validation processes reducing human error",
-        "Established comprehensive documentation and training materials"
-      ],
-      impact: {
-        users: "1000+",
-        timeReduction: "30%",
-        accuracy: "99%"
-      },
-      gradient: "from-blue-600 via-indigo-600 to-purple-500",
-      bgPattern: "bg-gradient-to-br from-blue-900/20 via-indigo-900/20 to-purple-900/20",
-      githubUrl: "https://github.com/bers31/bernardo.github.io/tree/main/Student_Academic_Information_System",
-      liveUrl: "https://bers31.github.io/bernardo.github.io/Student_Academic_Information_System/"
-    },
-    {
-      id: 9,
-      title: "Advanced Customer Segmentation System",
-      subtitle: "Supervised Learning Customer Analytics",
-      period: "Mar 2024 - May 2024",
-      organization: "Diponegoro University",
-      category: "Data Science",
-      featured: false,
-      image: foto9,
-      technologies: ["Python", "Random Forest", "SVM", "XGBoost", "k-NN", "Streamlit"],
-      description: "Engineered a sophisticated customer segmentation system using advanced supervised learning algorithms, achieving highly actionable segmentation that empowers businesses to target customer groups effectively.",
-      highlights: [
-        "Implemented cutting-edge models including Random Forest, SVM, XGBoost, and k-NN",
-        "Achieved significant improvement in segmentation accuracy and operational efficiency",
-        "Developed interactive Streamlit interface for dynamic exploration",
-        "Performed rigorous model evaluation and hyperparameter tuning",
-        "Integrated real-time customer data analysis features"
-      ],
-      impact: {
-        accuracy: "95%",
-        models: "4",
-        efficiency: "+40%"
-      },
-      gradient: "from-cyan-600 via-blue-600 to-indigo-500",
-      bgPattern: "bg-gradient-to-br from-cyan-900/20 via-blue-900/20 to-indigo-900/20",
-      githubUrl: "https://github.com/bers31/bernardo.github.io/tree/main/Supervised_Learning_Project",
-      liveUrl: "https://bers31.github.io/bernardo.github.io/Supervised_Learning_Project/"
-    },
-    {
-      id: 10,
-      title: "Custom Search Engine with VSM & LSI",
-      subtitle: "Advanced Information Retrieval System",
-      period: "Sep 2024 - Nov 2024",
-      organization: "Diponegoro University",
-      category: "AI/ML",
-      featured: true,
-      image: foto10,
-      technologies: ["Python", "Streamlit", "Sastrawi", "NLTK", "scikit-learn", "TF-IDF"],
-      description: "Designed and deployed an interactive search engine showcasing advanced document retrieval techniques using both Vector Space Model (VSM) and Latent Semantic Indexing (LSI) for Indonesian text processing.",
-      highlights: [
-        "Engineered robust text-preprocessing pipeline with Indonesian stopword removal",
-        "Implemented Vector Space Model with TF and TF-IDF weighting schemes",
-        "Extended retrieval capabilities through LSI using Truncated SVD",
-        "Achieved notable improvements in top-of-list relevance using Accuracy@K metrics",
-        "Developed dynamic visualizations of topic distributions and document similarity"
-      ],
-      impact: {
-        topics: "10",
-        accuracy: "92%",
-        languages: "ID"
-      },
-      gradient: "from-emerald-600 via-teal-600 to-cyan-500",
-      bgPattern: "bg-gradient-to-br from-emerald-900/20 via-teal-900/20 to-cyan-900/20",
-      githubUrl: "https://github.com/bers31/bernardo.github.io/tree/main/Custom_Search_Engine_With_VSM%26LSI",
-      liveUrl: "https://bers31.github.io/bernardo.github.io/Custom_Search_Engine_With_VSM%26LSI/"
-    },
-    {
-      id: 11,
-      title: "Greenhouse Gas Emissions Prediction",
-      subtitle: "Environmental Data Analytics & Forecasting",
-      period: "Jan 2024 - Mar 2024",
-      organization: "Environmental Research Project",
-      category: "Data Science",
-      featured: false,
-      image: foto11,
-      technologies: ["Python", "R", "Excel", "Time Series Analysis", "Regression"],
-      description: "Built a predictive model for forecasting greenhouse gas emissions over the next decade, delivering insights that support policy development for emissions reduction and environmental planning.",
-      highlights: [
-        "Collected and cleaned extensive environmental datasets for accurate analysis",
-        "Employed trend analysis and time-series techniques for decade-long predictions",
-        "Achieved high reliability and alignment with environmental data trends",
-        "Collaborated with environmental experts to refine model parameters",
-        "Provided actionable insights through comprehensive data visualizations"
-      ],
-      impact: {
-        forecast: "10 years",
-        accuracy: "High",
-        datasets: "Multiple"
-      },
-      gradient: "from-green-600 via-emerald-600 to-teal-500",
-      bgPattern: "bg-gradient-to-br from-green-900/20 via-emerald-900/20 to-teal-900/20",
-      githubUrl: "https://github.com/bers31/bernardo.github.io/tree/main/Greenhouse_Gas_Emissions_Prediction%26Analysis",
-      liveUrl: "https://bers31.github.io/bernardo.github.io/Greenhouse_Gas_Emissions_Prediction%26Analysis/"
     },
     {
       id: 12,
