@@ -95,7 +95,7 @@ const ExperiencePage = () => {
     },
     {
       id: 2,
-      role: "Laboratory Teaching Assistant",
+      role: "Part-time - Laboratory Teaching Assistant",
       company: "Computer Laboratory Diponegoro University",
       period: "Jun 2023 – Jun 2025",
       duration: "2 years",
@@ -149,11 +149,11 @@ const ExperiencePage = () => {
     },
     {
       id: 4,
-      role: "Freelance - Assistant Manager & Supply Chain Assistant",
+      role: "Part-time - Assistant Manager & Supply Chain Assistant",
       company: "YC Electric",
       period: "Jan 2022 – Dec 2024",
       duration: "3 years",
-      type: "Freelance",
+      type: "Part-time",
       location: "Semarang, Indonesia",
       description: "Led operational excellence initiatives while developing the company's first e-commerce platform, driving digital transformation and business growth.",
       achievements: [
