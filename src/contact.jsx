@@ -165,7 +165,7 @@ const Contact = () => {
   ];
 
   const quickStats = [
-    { number: '3.77', label: 'Current GPA', icon: Star },
+    { number: '3.78', label: 'GPA', icon: Star },
     { number: '10+', label: 'Projects Completed', icon: CheckCircle },
     { number: '2+', label: 'Years Experience', icon: Clock },
     { number: '500+', label: 'Users Served', icon: MessageCircle }

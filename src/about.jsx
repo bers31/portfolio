@@ -31,9 +31,9 @@ const About = () => {
 
   const personalInfo = {
     name: "Bernardo Nandaniar Sunia",
-    title: "AI/ML Developer & Informatics Student",
+    title: "Bachelor of Informatics",
     university: "Diponegoro University",
-    gpa: "3.77/4.0",
+    gpa: "3.78/4.0",
     semester: "6th Semester",
     location: "Semarang, Indonesia",
     languages: ["English (CEFR 488)", "Indonesian (Native)"],
@@ -101,7 +101,7 @@ const About = () => {
     {
       icon: Award,
       title: "Academic Excellence",
-      description: "Maintained 3.77 GPA throughout academic journey",
+      description: "Maintained 3.78 GPA throughout academic journey",
       year: "2022-2025"
     },
     {
@@ -206,7 +206,7 @@ const About = () => {
             <div className="flex flex-wrap justify-center gap-4 mb-8">
               <div className="inline-flex items-center px-3 py-1 bg-blue-500/20 rounded-full border border-blue-500/30">
                 <GraduationCap className="w-4 h-4 text-blue-400 mr-2" />
-                <span className="text-sm text-blue-300">Informatics Student</span>
+                <span className="text-sm text-blue-300">Bachelor of Informatics</span>
               </div>
               <div className="inline-flex items-center px-3 py-1 bg-purple-500/20 rounded-full border border-purple-500/30">
                 <Brain className="w-4 h-4 text-purple-400 mr-2" />

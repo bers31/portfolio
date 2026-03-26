@@ -313,7 +313,7 @@ const ExperiencePage = () => {
               </div>
               <div className="flex items-center px-4 py-2 bg-gray-800/50 rounded-full border border-gray-700">
                 <Star className="w-4 h-4 text-yellow-400 mr-2" />
-                <span className="text-sm text-gray-300">Informatics Student</span>
+                <span className="text-sm text-gray-300">Bachelor of Informatics</span>
               </div>
               <div className="flex items-center px-4 py-2 bg-gray-800/50 rounded-full border border-gray-700">
                 <Clock className="w-4 h-4 text-purple-400 mr-2" />

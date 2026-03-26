@@ -47,7 +47,7 @@ const Home = () => {
     { number: "6+", label: "Projects Completed", icon: Trophy },
     { number: "500K+", label: "Data Points Analyzed", icon: Database },
     { number: "95%", label: "AI Model Accuracy", icon: Target },
-    { number: "3.77", label: "GPA Achievement", icon: Award }
+    { number: "3.78", label: "GPA Achievement", icon: Award }
   ];
 
   const highlights = [
@@ -201,7 +201,7 @@ const Home = () => {
                 Bernardo Nandaniar Sunia
               </h1>
               <div className="text-2xl md:text-3xl text-gray-300 mb-2">
-                Informatics Student & 
+                Bachelor of Informatics
               </div>
               <div className="text-2xl md:text-3xl font-semibold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent min-h-[3rem] flex items-center justify-center">
                 <span className="animate-pulse">{dynamicTexts[currentText]}</span>
