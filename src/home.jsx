@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronDown, Mail, Phone, MapPin, Linkedin, ExternalLink, Code, Brain, Database, Zap, Award, Briefcase, GraduationCap, Star, Download, ArrowRight, Play, Sparkles, Trophy, Target, Lightbulb, Heart } from 'lucide-react';
-import foto from './images/foto.png';
+import { ChevronDown, Mail, Phone, MapPin, Linkedin, ExternalLink, Brain, Database, Zap, Award, Briefcase, GraduationCap, Star, Download, ArrowRight, Play, Sparkles, Trophy, Target, Lightbulb, Heart, BarChart2, Search, FlaskConical, TrendingUp } from 'lucide-react';
+import foto from './images/foto.jpg';
 import resumeFile from './assets/CV - Bernardo Nandaniar Sunia.pdf';
 
 const Home = () => {
@@ -83,10 +83,10 @@ const Home = () => {
   ];
 
   const expertise = [
-    { icon: Code, title: "Full-Stack Development", desc: "Building end-to-end applications" },
-    { icon: Brain, title: "Artificial Intelligence", desc: "ML models and neural networks" },
-    { icon: Database, title: "Data Engineering", desc: "Big data processing and analytics" },
-    { icon: Zap, title: "Performance Optimization", desc: "Scalable and efficient solutions" }
+    { icon: BarChart2, title: "Data Analysis & Visualization", desc: "Extracting insights from complex datasets" },
+    { icon: Brain, title: "Machine Learning & AI", desc: "Building intelligent predictive models" },
+    { icon: Search, title: "Natural Language Processing", desc: "Text mining, sentiment & IR systems" },
+    { icon: TrendingUp, title: "Statistical & Research Methods", desc: "Hypothesis testing and quantitative analysis" }
   ];
 
   const experience = [

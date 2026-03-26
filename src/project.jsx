@@ -34,6 +34,7 @@ import foto9 from './images/foto9.png';
 import foto10 from './images/foto10.png';
 import foto11 from './images/foto11.png';
 import foto12 from './images/foto12.png';
+import foto13 from './images/foto13.png';
 import resumeFile from './assets/CV - Bernardo Nandaniar Sunia.pdf';
 
 const navigationItems = [
@@ -405,7 +406,35 @@ const ProjectsPage = () => {
       bgPattern: "bg-gradient-to-br from-orange-900/20 via-amber-900/20 to-yellow-900/20",
       githubUrl: "https://github.com/bers31/bernardo.github.io/tree/main/Data_Analysis_Excel",
       liveUrl: "https://bers31.github.io/bernardo.github.io/Data_Analysis_Excel/"
-    }
+    },
+    {
+      id: 13,
+      title: "TF-IDF vs SBERT for Aspect Sentiment Classification",
+      subtitle: "Comparative NLP Research on Indonesian E-Commerce Reviews",
+      period: "Sep 2025 - Feb 2026",
+      organization: "Universitas Diponegoro (Undergraduate Thesis)",
+      category: "AI/ML",
+      featured: true,
+      image: foto1, // ganti dengan foto yang sesuai jika ada
+      technologies: ["Python", "SBERT", "TF-IDF", "Logistic Regression", "scikit-learn", "Hugging Face", "Pandas", "Jupyter"],
+      description: "Undergraduate thesis investigating how different text representation paradigms affect Aspect Sentiment Classification (ASC) on Indonesian Shopee reviews. Compared TF-IDF (sparse) vs. SBERT (dense contextual embeddings), both paired with Logistic Regression, across seven service aspects with a rigorously annotated dataset (Fleiss' Kappa > 0.9).",
+      highlights: [
+        "Collected and annotated 700+ reviews across 7 aspects via web scraping and hierarchical clustering-based aspect discovery",
+        "Achieved inter-annotator agreement of Fleiss' Kappa > 0.9 across three independent annotators",
+        "SBERT outperformed TF-IDF with 94.44% vs 91.30% combined accuracy, confirmed by McNemar's Test",
+        "Implemented grid search with stratified 5-fold cross-validation under both per-aspect and universal hyperparameter scenarios",
+        "Evaluated with six metrics: Accuracy, Precision, Recall, F1-Score, ROC-AUC, and PR-AUC"
+      ],
+      impact: {
+        accuracy: "94.44%",
+        aspects: "7",
+        kappa: ">0.9"
+      },
+      gradient: "from-violet-600 via-purple-600 to-indigo-500",
+      bgPattern: "bg-gradient-to-br from-violet-900/20 via-purple-900/20 to-indigo-900/20",
+      githubUrl: "https://github.com/bers31/shopee-absa-tfidf-sbert",
+      liveUrl: "https://github.com/bers31/shopee-absa-tfidf-sbert"
+    },
   ];
 
   const categories = [
