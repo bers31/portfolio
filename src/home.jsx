@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronDown, Mail, Phone, MapPin, Linkedin, ExternalLink, Brain, Database, Zap, Award, Briefcase, GraduationCap, Star, Download, ArrowRight, Play, Sparkles, Trophy, Target, Lightbulb, Heart, BarChart2, Search, FlaskConical, TrendingUp } from 'lucide-react';
+import { ChevronDown, Mail, Phone, MapPin, Linkedin, ExternalLink, Brain, Database, Zap, Award, Briefcase, GraduationCap, Star, Download, ArrowRight, Play, Sparkles, Trophy, Target, Lightbulb, Heart, BarChart2, Search, TrendingUp } from 'lucide-react';
 import foto from './images/foto.jpg';
 import resumeFile from './assets/CV - Bernardo Nandaniar Sunia.pdf';
 

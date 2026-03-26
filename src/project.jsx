@@ -415,7 +415,7 @@ const ProjectsPage = () => {
       organization: "Universitas Diponegoro (Undergraduate Thesis)",
       category: "AI/ML",
       featured: true,
-      image: foto1, // ganti dengan foto yang sesuai jika ada
+      image: foto13, // ganti dengan foto yang sesuai jika ada
       technologies: ["Python", "SBERT", "TF-IDF", "Logistic Regression", "scikit-learn", "Hugging Face", "Pandas", "Jupyter"],
       description: "Undergraduate thesis investigating how different text representation paradigms affect Aspect Sentiment Classification (ASC) on Indonesian Shopee reviews. Compared TF-IDF (sparse) vs. SBERT (dense contextual embeddings), both paired with Logistic Regression, across seven service aspects with a rigorously annotated dataset (Fleiss' Kappa > 0.9).",
       highlights: [
