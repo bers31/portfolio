@@ -108,8 +108,16 @@ const SkillsPage = () => {
 
   const certificates = [
     { 
+      name: 'Intellectual Property Certificate – Software', 
+      issuer: 'Republic of Indonesia Ministry of Law', 
+      year: '2026', 
+      color: 'from-purple-500 to-pink-600', 
+      verified: true,
+      image: sertifikat5
+    },
+    { 
       name: 'Intellectual Property Certificate – Chatbot', 
-      issuer: 'REPUBLIC OF INDONESIA MINISTRY OF LAW', 
+      issuer: 'Republic of Indonesia Ministry of Law', 
       year: '2025', 
       color: 'from-green-500 to-emerald-600', 
       verified: true,
@@ -146,14 +154,6 @@ const SkillsPage = () => {
       color: 'from-blue-400 to-cyan-500', 
       verified: true,
       image: sertifikat4
-    },
-    { 
-      name: 'Data Analysis Bootcamp', 
-      issuer: 'Diponegoro University', 
-      year: '2023', 
-      color: 'from-purple-500 to-pink-600', 
-      verified: true,
-      image: sertifikat5
     }
   ];
 
