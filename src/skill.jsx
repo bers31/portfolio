@@ -109,7 +109,7 @@ const SkillsPage = () => {
   const certificates = [
     { 
       name: 'Intellectual Property Certificate – Software', 
-      issuer: 'Republic of Indonesia Ministry of Law', 
+      issuer: 'Republic of Indonesia Ministry  Law', 
       year: '2026', 
       color: 'from-purple-500 to-pink-600', 
       verified: true,
