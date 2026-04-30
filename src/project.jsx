@@ -96,8 +96,8 @@ const ProjectsPage = () => {
       },
       gradient: "from-violet-600 via-purple-600 to-indigo-500",
       bgPattern: "bg-gradient-to-br from-violet-900/20 via-purple-900/20 to-indigo-900/20",
-      githubUrl: "https://github.com/bers31/shopee-absa-tfidf-sbert",
-      liveUrl: "https://github.com/bers31/shopee-absa-tfidf-sbert"
+      githubUrl: "https://github.com/bers31/bernardo.github.io/tree/main/Aspect_Sentiment_Classification_of_E-Commerce_Reviews_Using_TF-IDF_and_SBERT_Representations",
+      liveUrl: "https://bers31.github.io/bernardo.github.io/Aspect_Sentiment_Classification_of_E-Commerce_Reviews_Using_TF-IDF_and_SBERT_Representations/"
     },
     {
       id: 2,
