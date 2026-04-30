@@ -290,7 +290,7 @@ const About = () => {
                       }} className="inline-flex items-center px-4 py-2 bg-amber-500/20 hover:bg-amber-500/30 rounded-lg border border-amber-500/30 transition-all duration-300"
                     >
                       <Download className="w-4 h-4 mr-2" />
-                      <span>Resume</span>
+                      <span>CV</span>
                     </button>
                   </div>
                 </div>

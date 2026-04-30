@@ -516,7 +516,7 @@ const Contact = () => {
                   }}
                   className="w-full bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 px-6 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 flex items-center justify-between shadow-lg hover:shadow-xl"
                 >
-                  <span>Download Resume</span>
+                  <span>Download CV</span>
                   <Download className="w-5 h-5" />
                 </button>
               </div>

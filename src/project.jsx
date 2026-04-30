@@ -941,7 +941,7 @@ const ProjectsPage = () => {
               className="flex items-center gap-2 px-8 py-3 border-2 border-blue-500 rounded-lg font-semibold text-blue-400 hover:bg-blue-500 hover:text-white transition-all duration-300"
             >
               <Award className="w-4 h-4" />
-              View Resume
+              View CV
             </button>
           </div>
         </div>

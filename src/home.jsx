@@ -248,7 +248,7 @@ const Home = () => {
                   className="group px-8 py-4 border-2 border-blue-500 rounded-full font-semibold hover:bg-blue-500 hover:border-blue-600 transition-all duration-300 flex items-center space-x-2"
                 >
                   <Download className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                  <span>Download Resume</span>
+                  <span>Download CV</span>
                 </button>
               </div>
             </div>
