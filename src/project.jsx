@@ -73,6 +73,34 @@ const ProjectsPage = () => {
   const projects = [
     {
       id: 1,
+      title: "TF-IDF vs SBERT for Aspect Sentiment Classification",
+      subtitle: "Comparative NLP Research on Indonesian E-Commerce Reviews",
+      period: "Sep 2025 - Feb 2026",
+      organization: "Universitas Diponegoro (Undergraduate Thesis)",
+      category: "AI/ML",
+      featured: true,
+      image: foto13, // ganti dengan foto yang sesuai jika ada
+      technologies: ["Python", "SBERT", "TF-IDF", "Logistic Regression", "scikit-learn", "Hugging Face", "Pandas", "Jupyter"],
+      description: "Undergraduate thesis investigating how different text representation paradigms affect Aspect Sentiment Classification (ASC) on Indonesian Shopee reviews. Compared TF-IDF (sparse) vs. SBERT (dense contextual embeddings), both paired with Logistic Regression, across seven service aspects with a rigorously annotated dataset (Fleiss' Kappa > 0.9).",
+      highlights: [
+        "Collected and annotated 700+ reviews across 7 aspects via web scraping and hierarchical clustering-based aspect discovery",
+        "Achieved inter-annotator agreement of Fleiss' Kappa > 0.9 across three independent annotators",
+        "SBERT outperformed TF-IDF with 94.44% vs 91.30% combined accuracy, confirmed by McNemar's Test",
+        "Implemented grid search with stratified 5-fold cross-validation under both per-aspect and universal hyperparameter scenarios",
+        "Evaluated with six metrics: Accuracy, Precision, Recall, F1-Score, ROC-AUC, and PR-AUC"
+      ],
+      impact: {
+        f1_score: "94.44%",
+        aspects: "7",
+        kappa: ">0.9"
+      },
+      gradient: "from-violet-600 via-purple-600 to-indigo-500",
+      bgPattern: "bg-gradient-to-br from-violet-900/20 via-purple-900/20 to-indigo-900/20",
+      githubUrl: "https://github.com/bers31/shopee-absa-tfidf-sbert",
+      liveUrl: "https://github.com/bers31/shopee-absa-tfidf-sbert"
+    },
+    {
+      id: 2,
       title: "AI-Driven Information Center Chatbot",
       subtitle: "Revolutionizing Correctional Facility Communication",
       period: "May 2025 - Jul 2025",
@@ -100,7 +128,7 @@ const ProjectsPage = () => {
       liveUrl: "https://bers31.github.io/bernardo.github.io/Automated_Information_System_Chatbot/"
     },
     {
-      id: 2,
+      id: 3,
       title: "Twitter Information Diffusion & Sentiment Analysis",
       subtitle: "Large-Scale Social Media Analytics Platform",
       period: "Apr 2025 - Jun 2025",
@@ -128,7 +156,7 @@ const ProjectsPage = () => {
       liveUrl: "https://bers31.github.io/bernardo.github.io/Twitter_Information_Diffusion%26Sentiment_Analysis/"
     },
     {
-      id: 3,
+      id: 4,
       title: "Financial Reporting Application",
       subtitle: "Enterprise-Grade Financial Management System",
       period: "Dec 2024 - Feb 2025",
@@ -156,7 +184,7 @@ const ProjectsPage = () => {
       liveUrl: "https://bers31.github.io/bernardo.github.io/Financial_Reporting_Application/"
     },
     {
-      id: 4,
+      id: 5,
       title: "Advanced Information Retrieval System",
       subtitle: "Multilingual Neural Search Engine",
       period: "Aug 2024 - Dec 2024",
@@ -184,7 +212,7 @@ const ProjectsPage = () => {
       liveUrl: "https://bers31.github.io/bernardo.github.io/Advance_Information_Retrieval_System/"
     },
     {
-      id: 5,
+      id: 6,
       title: "Student Performance Clustering System",
       subtitle: "AI-Powered Educational Analytics",
       period: "Aug 2024 - Dec 2024",
@@ -212,7 +240,7 @@ const ProjectsPage = () => {
       liveUrl: "https://bers31.github.io/bernardo.github.io/Unsupervised_Learning_Project/"
     },
     {
-      id: 6,
+      id: 7,
       title: "Advanced Customer Segmentation System",
       subtitle: "Supervised Learning Customer Analytics",
       period: "Aug 2024 - Dec 2024",
@@ -240,7 +268,7 @@ const ProjectsPage = () => {
       liveUrl: "https://bers31.github.io/bernardo.github.io/Supervised_Learning_Project/"
     },
     {
-      id: 7,
+      id: 8,
       title: "Greenhouse Gas Emissions Prediction",
       subtitle: "Environmental Data Analytics & Forecasting",
       period: "Feb 2024 - Dec 2024",
@@ -268,7 +296,7 @@ const ProjectsPage = () => {
       liveUrl: "https://bers31.github.io/bernardo.github.io/Greenhouse_Gas_Emissions_Prediction%26Analysis/"
     },
     {
-      id: 8,
+      id: 9,
       title: "Student Information System (SI-MAS)",
       subtitle: "Academic Management Platform",
       period: "Feb 2024 - Dec 2024",
@@ -296,7 +324,7 @@ const ProjectsPage = () => {
       liveUrl: "https://bers31.github.io/bernardo.github.io/Student_Academic_Information_System/"
     },
     {
-      id: 9,
+      id: 10,
       title: "Custom Search Engine with VSM & LSI",
       subtitle: "Advanced Information Retrieval System",
       period: "Feb 2024 - Aug 2024",
@@ -324,7 +352,7 @@ const ProjectsPage = () => {
       liveUrl: "https://bers31.github.io/bernardo.github.io/Custom_Search_Engine_With_VSM%26LSI/"
     },
     {
-      id: 10,
+      id: 11,
       title: "3D Minecraft Game Development",
       subtitle: "Interactive 3D Gaming Experience",
       period: "Jan 2024 - Jun 2024",
@@ -352,7 +380,7 @@ const ProjectsPage = () => {
       liveUrl: "https://bers31.github.io/bernardo.github.io/3D_Minecraft_Development/"
     },
     {
-      id: 11,
+      id: 12,
       title: "YC Electric E-Commerce Platform",
       subtitle: "Custom E-Commerce Solution",
       period: "Jan 2022 - Jan 2024",
@@ -380,7 +408,7 @@ const ProjectsPage = () => {
       liveUrl: "https://bers31.github.io/bernardo.github.io/Custom_E_Commerce_Website/"
     },
     {
-      id: 12,
+      id: 13,
       title: "Excel Data Analysis Dashboard",
       subtitle: "Advanced Business Intelligence Platform",
       period: "Jan 2022 - Jul 2022",
@@ -406,34 +434,6 @@ const ProjectsPage = () => {
       bgPattern: "bg-gradient-to-br from-orange-900/20 via-amber-900/20 to-yellow-900/20",
       githubUrl: "https://github.com/bers31/bernardo.github.io/tree/main/Data_Analysis_Excel",
       liveUrl: "https://bers31.github.io/bernardo.github.io/Data_Analysis_Excel/"
-    },
-    {
-      id: 13,
-      title: "TF-IDF vs SBERT for Aspect Sentiment Classification",
-      subtitle: "Comparative NLP Research on Indonesian E-Commerce Reviews",
-      period: "Sep 2025 - Feb 2026",
-      organization: "Universitas Diponegoro (Undergraduate Thesis)",
-      category: "AI/ML",
-      featured: true,
-      image: foto13, // ganti dengan foto yang sesuai jika ada
-      technologies: ["Python", "SBERT", "TF-IDF", "Logistic Regression", "scikit-learn", "Hugging Face", "Pandas", "Jupyter"],
-      description: "Undergraduate thesis investigating how different text representation paradigms affect Aspect Sentiment Classification (ASC) on Indonesian Shopee reviews. Compared TF-IDF (sparse) vs. SBERT (dense contextual embeddings), both paired with Logistic Regression, across seven service aspects with a rigorously annotated dataset (Fleiss' Kappa > 0.9).",
-      highlights: [
-        "Collected and annotated 700+ reviews across 7 aspects via web scraping and hierarchical clustering-based aspect discovery",
-        "Achieved inter-annotator agreement of Fleiss' Kappa > 0.9 across three independent annotators",
-        "SBERT outperformed TF-IDF with 94.44% vs 91.30% combined accuracy, confirmed by McNemar's Test",
-        "Implemented grid search with stratified 5-fold cross-validation under both per-aspect and universal hyperparameter scenarios",
-        "Evaluated with six metrics: Accuracy, Precision, Recall, F1-Score, ROC-AUC, and PR-AUC"
-      ],
-      impact: {
-        accuracy: "94.44%",
-        aspects: "7",
-        kappa: ">0.9"
-      },
-      gradient: "from-violet-600 via-purple-600 to-indigo-500",
-      bgPattern: "bg-gradient-to-br from-violet-900/20 via-purple-900/20 to-indigo-900/20",
-      githubUrl: "https://github.com/bers31/shopee-absa-tfidf-sbert",
-      liveUrl: "https://github.com/bers31/shopee-absa-tfidf-sbert"
     },
   ];
 
