@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Home from './home';
 import About from './about';
 import ProjectsPage from './project';
-import SkillsPage from './skill';
+import Skills from './skill';
 import ExperiencePage from './experience';
 import Contact from './contact';
 
@@ -19,7 +19,7 @@ function App() {
         {/* Other pages */}
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<ProjectsPage />} />
-        <Route path="/skills" element={<SkillsPage />} />
+        <Route path="/skills" element={<Skills />} />
         <Route path="/experience" element={<ExperiencePage />} />
         <Route path="/contact" element={<Contact />} />
 
