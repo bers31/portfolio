@@ -544,7 +544,7 @@ const ExperiencePage = () => {
       </section>
 
       {/* Technical Expertise */}
-      <section className="py-16 lg:py-20 bg-white border-t border-stone-200">
+      <section className="py-20 lg:py-24 bg-[#FCF9F2] border-t border-[#E8DED0]">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <Reveal className="text-center mb-12">
             <div className="inline-flex items-center gap-2 font-mono-data text-xs tracking-widest uppercase text-[#AD7F2E] mb-3">
@@ -582,7 +582,7 @@ const ExperiencePage = () => {
       </section>
 
       {/* How I approach a build */}
-      <section className="py-16 lg:py-20 bg-white border-y border-stone-200">
+      <section className="py-14 border-y border-[#E5D8BD] bg-[#FBF5E8]">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <Reveal className="text-center mb-12">
             <div className="inline-flex items-center gap-2 font-mono-data text-xs tracking-widest uppercase text-[#AD7F2E] mb-3">
