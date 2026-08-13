@@ -326,9 +326,16 @@ const Home = () => {
                 </span>
               </div>
               <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start mb-8">
-                <Link to="/projects" className="group inline-flex items-center justify-center gap-2 px-6 py-3 rounded-md font-medium text-sm text-white shadow-lg shadow-[#1C2333]/10 transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5" style={{ background: 'linear-gradient(135deg, #1C2333, #2A3450)' }}>
-                  View Projects <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
-                </Link>
+                <a
+                  href="https://bit.ly/bernardo-project"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex items-center justify-center gap-2 px-6 py-3 rounded-md font-medium text-sm text-white shadow-lg shadow-[#1C2333]/10 transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5"
+                  style={{ background: 'linear-gradient(135deg, #1C2333, #2A3450)' }}
+                >
+                  View Projects
+                  <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+                </a>
                 <button
                   onClick={() => {
                     const link = document.createElement('a');
