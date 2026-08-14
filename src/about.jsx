@@ -490,7 +490,7 @@ const About = () => {
                     ))}
                   </ul>
                   <Link to="/projects" className="inline-flex items-center gap-1.5 text-sm font-medium text-[#1C2333] hover:text-[#AD7F2E] transition-colors group">
-                    See the full ASQE roadmap <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+                    See the full project roadmap <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
                   </Link>
                 </div>
               </Reveal>

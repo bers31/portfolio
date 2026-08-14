@@ -532,11 +532,15 @@ const ProjectsPage = () => {
       </section>
 
       {/* Quick nav */}
-      <div className="sticky top-16 z-40 bg-[#F5F1E8]/95 backdrop-blur-sm border-y border-stone-300/60 hidden md:block">
+      <div  className="relative py-16 lg:py-20 overflow-hidden bg-[#FBF0EA] border-y border-[#E7D2C7]">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
-          <div className="flex items-center gap-1 overflow-x-auto py-2.5 text-sm">
+          <div className="flex items-center gap-2 overflow-x-auto py-2.5 text-sm">
             {quickLinks.map((q) => (
-              <a key={q.id} href={`#${q.id}`} className="px-3 py-1.5 rounded-full text-stone-500 hover:text-[#1C2333] hover:bg-white whitespace-nowrap transition-colors shrink-0">
+              <a
+                key={q.id}
+                href={`#${q.id}`}
+                className="px-3.5 py-1.5 rounded-full bg-white border border-[#E7D2C7] text-stone-600 hover:text-[#1C2333] hover:border-[#AD7F2E] hover:shadow-sm whitespace-nowrap transition-all duration-200 shrink-0"
+              >
                 {q.label}
               </a>
             ))}
@@ -1021,7 +1025,7 @@ const ProjectsPage = () => {
       </section>
 
       {/* ============ Other projects grid ============ */}
-      <section id="other" className="py-16 lg:py-20 bg-white border-t border-stone-200 scroll-mt-nav">
+      <section id="other" className="py-20 lg:py-24 bg-[#FCF9F2] border-t border-[#E8DED0]">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <Reveal className="text-center mb-10">
             <SectionEyebrow>The Rest</SectionEyebrow>
