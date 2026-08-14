@@ -395,6 +395,83 @@ const SectionEyebrow = ({ children }) => (
   </div>
 );
 
+
+const WirakyProjectHeader = ({
+  eyebrow = 'PT Wiraky Nusa Telekomunikasi',
+  title,
+  description,
+  icon: Icon,
+  iconBackground,
+  status,
+  period,
+  featured = false,
+}) => (
+  <div className={`px-6 sm:px-10 py-8 border-b ${featured ? 'border-white/10' : 'border-stone-200'}`}>
+    <div className="flex flex-wrap items-start justify-between gap-4">
+      <div className="flex items-start gap-3 min-w-0">
+        {Icon && (
+          <div
+            className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0"
+            style={{ background: iconBackground || 'linear-gradient(135deg, #1C2333, #2A3450)' }}
+          >
+            <Icon className="w-5 h-5 text-white" />
+          </div>
+        )}
+        <div className="min-w-0">
+          <div className="flex flex-wrap items-center gap-2">
+            <span
+              className={`font-mono-data text-[11px] uppercase tracking-wider ${
+                featured ? 'text-[#D9AD5C]' : 'text-[#AD7F2E]'
+              }`}
+            >
+              {eyebrow}
+            </span>
+          </div>
+          <h2
+            className={`font-display text-2xl sm:text-3xl font-semibold mt-1 leading-snug ${
+              featured ? 'text-white' : 'text-[#1C2333]'
+            }`}
+          >
+            {title}
+          </h2>
+          <p
+            className={`text-sm leading-relaxed mt-2 max-w-3xl ${
+              featured ? 'text-stone-300' : 'text-stone-500'
+            }`}
+          >
+            {description}
+          </p>
+        </div>
+      </div>
+
+      {(status || period) && (
+        <div className="flex items-center gap-2 shrink-0">
+          {status && (
+            <span
+              className={`font-mono-data text-[10px] uppercase tracking-wider px-2.5 py-1 rounded-full ${
+                featured
+                  ? 'bg-white/10 text-stone-200 border border-white/10'
+                  : 'bg-[#AD7F2E]/10 text-[#AD7F2E] border border-[#AD7F2E]/15'
+              }`}
+            >
+              {status}
+            </span>
+          )}
+          {period && (
+            <span
+              className={`font-mono-data text-xs ${
+                featured ? 'text-stone-300' : 'text-stone-400'
+              }`}
+            >
+              {period}
+            </span>
+          )}
+        </div>
+      )}
+    </div>
+  </div>
+);
+
 const ProjectModal = ({ project, onClose }) => {
   useEffect(() => {
     if (!project) return;
@@ -536,11 +613,7 @@ const ProjectsPage = () => {
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="flex items-center gap-2 overflow-x-auto py-2.5 text-sm">
             {quickLinks.map((q) => (
-              <a
-                key={q.id}
-                href={`#${q.id}`}
-                className="px-3.5 py-1.5 rounded-full bg-white border border-[#E7D2C7] text-stone-600 hover:text-[#1C2333] hover:border-[#AD7F2E] hover:shadow-sm whitespace-nowrap transition-all duration-200 shrink-0"
-              >
+              <a key={q.id} href={`#${q.id}`} className="px-3.5 py-1.5 rounded-full bg-white border border-[#E7D2C7] text-stone-600 hover:text-[#1C2333] hover:border-[#AD7F2E] hover:shadow-sm whitespace-nowrap transition-all duration-200 shrink-0">
                 {q.label}
               </a>
             ))}
@@ -554,17 +627,17 @@ const ProjectsPage = () => {
           <Reveal>
             <div className="relative rounded-2xl p-[1.5px] shadow-xl" style={{ background: 'linear-gradient(120deg, #AD7F2E, #BC5B39, #2F6B4F)' }}>
               <div className="bg-white rounded-[calc(1rem-1.5px)] overflow-hidden">
-                <div className="px-6 sm:px-10 py-8" style={{ background: 'linear-gradient(135deg, #1C2333, #2A3450)' }}>
-                  <div className="flex flex-wrap items-start justify-between gap-4">
-                    <div>
-                      <span className="font-mono-data text-[11px] uppercase tracking-wider text-[#D9AD5C]">PT Wiraky Nusa Telekomunikasi · Current Focus</span>
-                      <h2 className="font-display text-2xl sm:text-3xl font-semibold text-white mt-2 leading-snug">
-                        Aspect-Sentiment Quad Extraction (ASQE)
-                      </h2>
-                      <p className="text-stone-300 text-sm mt-1">For Maribaya Resort &amp; Glamping Tent guest reviews</p>
-                    </div>
-                    <span className="font-mono-data text-xs text-stone-300 shrink-0">2026 · Ongoing</span>
-                  </div>
+                <div className="rounded-[calc(1rem-1.5px)] overflow-hidden" style={{ background: 'linear-gradient(135deg, #1C2333, #2A3450)' }}>
+                  <WirakyProjectHeader
+                    eyebrow="PT Wiraky Nusa Telekomunikasi · Featured Work"
+                    title="Aspect-Sentiment Quad Extraction (ASQE)"
+                    description="A production-focused NLP system for turning Maribaya guest reviews into structured aspect, opinion, category, and sentiment signals."
+                    icon={Brain}
+                    status="Current Focus"
+                    period="2026 · Ongoing"
+                    featured
+                  />
+
                 </div>
 
                 <div className="aspect-[16/8] w-full bg-stone-100 overflow-hidden">
@@ -707,15 +780,12 @@ const ProjectsPage = () => {
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <Reveal>
             <div className="border border-stone-200 rounded-2xl bg-white overflow-hidden">
-              <div className="px-6 sm:px-10 py-8 border-b border-stone-200">
-                <span className="font-mono-data text-[11px] uppercase tracking-wider text-[#AD7F2E]">PT Wiraky Nusa Telekomunikasi</span>
-                <div className="flex items-center gap-3 mt-2">
-                  <div className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0" style={{ background: 'linear-gradient(135deg, #BC5B39, #E0916D)' }}>
-                    <ClipboardList className="w-5 h-5 text-white" />
-                  </div>
-                  <h2 className="font-display text-2xl font-semibold leading-snug">Guest Review Form &amp; Anomaly Detection</h2>
-                </div>
-              </div>
+              <WirakyProjectHeader
+                title="Guest Review Form &amp; Anomaly Detection"
+                description="First-party review collection system for Maribaya Resort and Glamping, combining token-based access, review dashboards, and anomaly detection."
+                icon={ClipboardList}
+                iconBackground="linear-gradient(135deg, #BC5B39, #E0916D)"
+              />
 
               <div className="aspect-[16/8] w-full bg-stone-100 overflow-hidden">
                 <img src={wirakyFormulir} alt="Guest review form and anomaly detection dashboard" className="w-full h-full object-cover" loading="lazy" />
@@ -830,15 +900,12 @@ const ProjectsPage = () => {
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <Reveal>
             <div className="border border-stone-200 rounded-2xl bg-white overflow-hidden">
-              <div className="px-6 sm:px-10 py-8 border-b border-stone-200">
-                <span className="font-mono-data text-[11px] uppercase tracking-wider text-[#AD7F2E]">PT Wiraky Nusa Telekomunikasi</span>
-                <div className="flex items-center gap-3 mt-2">
-                  <div className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0" style={{ background: 'linear-gradient(135deg, #AD7F2E, #D9AD5C)' }}>
-                    <MessageSquare className="w-5 h-5 text-white" />
-                  </div>
-                  <h2 className="font-display text-2xl font-semibold leading-snug">Maribaya Chatbot</h2>
-                </div>
-              </div>
+              <WirakyProjectHeader
+                title="Maribaya Information Chatbot"
+                description="NLP-based information chatbot that matches user input embeddings against known questions to return the most relevant answer."
+                icon={MessageSquare}
+                iconBackground="linear-gradient(135deg, #AD7F2E, #D9AD5C)"
+              />
               <div className="aspect-[16/8] w-full bg-stone-100 overflow-hidden">
                 <img src={wirakyChatbot} alt="Maribaya Chatbot interface" className="w-full h-full object-cover" loading="lazy" />
               </div>
@@ -866,9 +933,6 @@ const ProjectsPage = () => {
                       <span key={i} className="font-mono-data text-[11px] text-stone-500 border border-stone-200 rounded-full px-3 py-1">{t}</span>
                     ))}
                   </div>
-                  <a href="https://project-chatbot-production.up.railway.app/admin/admin.html" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-sm font-medium text-[#1C2333] hover:text-[#AD7F2E] transition-colors shrink-0">
-                    Admin dashboard, access required <ExternalLink className="w-3.5 h-3.5" />
-                  </a>
                 </div>
               </div>
             </div>
@@ -881,15 +945,12 @@ const ProjectsPage = () => {
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <Reveal>
             <div className="border border-stone-200 rounded-2xl bg-white overflow-hidden">
-              <div className="px-6 sm:px-10 py-8 border-b border-stone-200">
-                <span className="font-mono-data text-[11px] uppercase tracking-wider text-[#AD7F2E]">PT Wiraky Nusa Telekomunikasi</span>
-                <div className="flex items-center gap-3 mt-2">
-                  <div className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0" style={{ background: 'linear-gradient(135deg, #2F6B4F, #5FA07E)' }}>
-                    <Landmark className="w-5 h-5 text-white" />
-                  </div>
-                  <h2 className="font-display text-2xl font-semibold leading-snug">Property Data Analytics</h2>
-                </div>
-              </div>
+              <WirakyProjectHeader
+                title="Property Analytics &amp; Investment Database"
+                description="Property intelligence system combining listing data, macroeconomic indicators, price-to-income analysis, and area-level trends for investment evaluation."
+                icon={Landmark}
+                iconBackground="linear-gradient(135deg, #2F6B4F, #5FA07E)"
+              />
               <div className="aspect-[16/8] w-full bg-stone-100 overflow-hidden">
                 <img src={wirakyProperti} alt="Property data analytics dashboard" className="w-full h-full object-cover" loading="lazy" />
               </div>
@@ -944,9 +1005,6 @@ const ProjectsPage = () => {
                       <span key={i} className="font-mono-data text-[11px] text-stone-500 border border-stone-200 rounded-full px-3 py-1">{t}</span>
                     ))}
                   </div>
-                  <a href="https://wiraky-frontend-production.up.railway.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-sm font-medium text-[#1C2333] hover:text-[#AD7F2E] transition-colors shrink-0">
-                    View database frontend <ExternalLink className="w-3.5 h-3.5" />
-                  </a>
                 </div>
               </div>
             </div>
@@ -957,9 +1015,10 @@ const ProjectsPage = () => {
       {/* ============ Thesis bridge ============ */}
       <section id="thesis" className="py-16 lg:py-20 scroll-mt-nav">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
-          <Reveal className="text-center mb-8">
+          <Reveal className="text-center mb-10">
             <SectionEyebrow>The Research Behind ASQE</SectionEyebrow>
-            <h2 className="font-display text-3xl font-semibold max-w-2xl mx-auto">Before ASQE, There Was This Thesis</h2>
+            <h2 className="font-display text-3xl font-semibold max-w-2xl mx-auto mb-3">Before ASQE, There Was This Thesis</h2>
+            <p className="text-stone-600 max-w-xl mx-auto">The research foundation behind ASQE: a comparison of TF-IDF and SBERT representations for aspect-based sentiment classification on e-commerce reviews.</p>
           </Reveal>
           <Reveal delay={100}>
             <div className="border border-stone-200 rounded-2xl bg-white overflow-hidden">
@@ -1025,7 +1084,7 @@ const ProjectsPage = () => {
       </section>
 
       {/* ============ Other projects grid ============ */}
-      <section id="other" className="py-20 lg:py-24 bg-[#FCF9F2] border-t border-[#E8DED0]">
+      <section id="other" className="py-20 lg:py-24 bg-[#FCF9F2] border-t border-[#E8DED0] scroll-mt-nav">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <Reveal className="text-center mb-10">
             <SectionEyebrow>The Rest</SectionEyebrow>
