@@ -15,6 +15,7 @@ import sertifikat4 from './images/sertifikat4.png';
 import sertifikat5 from './images/sertifikat5.jpg';
 import sertifikat6 from './images/sertifikat6.jpg';
 import sertifikat7 from './images/sertifikat7.png';
+import sertifikat8 from './images/sertifikat8.jpg';
 
 /* ================= Data ================= */
 const NAV_ITEMS = [
@@ -77,7 +78,7 @@ const certificates = [
   { title: 'Database Programming with SQL', issuer: 'Oracle Academy', year: '2024', image: sertifikat2 },
   { title: 'Java Programming', issuer: 'Oracle Academy', year: '2024', image: sertifikat3 },
   { title: 'Cloud Computing', issuer: 'Alibaba Cloud', year: '2024', image: sertifikat4 },
-  { title: 'Data Analysis Bootcamp', issuer: 'Universitas Diponegoro', year: '2023' },
+  { title: 'Data Analysis Bootcamp', issuer: 'Universitas Diponegoro', year: '2023', image: sertifikat8},
 ];
 
 const credibilityStats = [
@@ -457,7 +458,7 @@ const Skills = () => {
                   <button
                     onClick={() => cert.image && setSelectedCert(cert)}
                     disabled={!cert.image}
-                    className={`relative aspect-[4/3] w-full overflow-hidden flex items-center justify-center block ${cert.badge ? 'bg-[#AD7F2E]/[0.06]' : 'bg-stone-100'}`}
+                    className={`relative aspect-[4/3] w-full overflow-hidden flex items-center justify-center ${cert.badge ? 'bg-[#AD7F2E]/[0.06]' : 'bg-stone-100'}`}
                   >
                     {cert.image ? (
                       <>
