@@ -4,7 +4,7 @@ import {
   Mail, Phone, Linkedin, Github, Menu, X, Award, ShieldCheck,
   Code2, BrainCircuit, BarChart3, Database, ArrowRight,
   ExternalLink, CheckCircle2, Lock, KeyRound, UserCheck, Radar,
-  TrendingUp, Layers, Eye
+  TrendingUp, Layers, Eye 
 } from 'lucide-react';
 
 import sertifikat from './images/sertifikat.jpg';
