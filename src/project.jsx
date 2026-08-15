@@ -404,29 +404,36 @@ const WirakyProjectHeader = ({
   iconBackground,
   status,
   period,
+  github,
+  live,
   featured = false,
 }) => (
   <div className={`px-6 sm:px-10 py-8 border-b ${featured ? 'border-white/10' : 'border-stone-200'}`}>
-    <div className="flex flex-wrap items-start justify-between gap-4">
+    <div className="flex flex-col gap-5">
+      {/* Title */}
       <div className="flex items-start gap-3 min-w-0">
         {Icon && (
           <div
             className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0"
-            style={{ background: iconBackground || 'linear-gradient(135deg, #1C2333, #2A3450)' }}
+            style={{
+              background:
+                iconBackground ||
+                'linear-gradient(135deg, #1C2333, #2A3450)',
+            }}
           >
             <Icon className="w-5 h-5 text-white" />
           </div>
         )}
+
         <div className="min-w-0">
-          <div className="flex flex-wrap items-center gap-2">
-            <span
-              className={`font-mono-data text-[11px] uppercase tracking-wider ${
-                featured ? 'text-[#D9AD5C]' : 'text-[#AD7F2E]'
-              }`}
-            >
-              {eyebrow}
-            </span>
-          </div>
+          <span
+            className={`font-mono-data text-[11px] uppercase tracking-wider ${
+              featured ? 'text-[#D9AD5C]' : 'text-[#AD7F2E]'
+            }`}
+          >
+            {eyebrow}
+          </span>
+
           <h2
             className={`font-display text-2xl sm:text-3xl font-semibold mt-1 leading-snug ${
               featured ? 'text-white' : 'text-[#1C2333]'
@@ -434,6 +441,7 @@ const WirakyProjectHeader = ({
           >
             {title}
           </h2>
+
           <p
             className={`text-sm leading-relaxed mt-2 max-w-3xl ${
               featured ? 'text-stone-300' : 'text-stone-500'
@@ -444,11 +452,12 @@ const WirakyProjectHeader = ({
         </div>
       </div>
 
-      {(status || period) && (
-        <div className="flex items-center gap-2 shrink-0">
+      {/* Metadata + Links */}
+      {(status || period || github || live) && (
+        <div className="flex flex-wrap items-center gap-2.5">
           {status && (
             <span
-              className={`font-mono-data text-[10px] uppercase tracking-wider px-2.5 py-1 rounded-full ${
+              className={`font-mono-data text-[10px] uppercase tracking-wider px-2.5 py-1.5 rounded-full ${
                 featured
                   ? 'bg-white/10 text-stone-200 border border-white/10'
                   : 'bg-[#AD7F2E]/10 text-[#AD7F2E] border border-[#AD7F2E]/15'
@@ -457,17 +466,51 @@ const WirakyProjectHeader = ({
               {status}
             </span>
           )}
+
           {period && (
             <span
-              className={`font-mono-data text-xs ${
+              className={`font-mono-data text-xs px-1 ${
                 featured ? 'text-stone-300' : 'text-stone-400'
               }`}
             >
               {period}
             </span>
           )}
+
+          {github && (
+            <a
+              href={github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md border text-xs font-medium transition-all hover:-translate-y-0.5 ${
+                featured
+                  ? 'border-white/20 bg-white/5 text-stone-200 hover:bg-white/10'
+                  : 'border-stone-200 bg-white text-stone-600 hover:border-[#AD7F2E]'
+              }`}
+            >
+              <Github className="w-3.5 h-3.5" />
+              Code
+            </a>
+          )}
+
+          {live && (
+            <a
+              href={live}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-md text-xs font-semibold transition-all hover:-translate-y-0.5 ${
+                featured
+                  ? 'bg-[#D9AD5C] text-[#1C2333] hover:bg-[#E6C47C]'
+                  : 'bg-[#1C2333] text-white hover:bg-[#2A3450]'
+              }`}
+            >
+              Live Demo
+              <ExternalLink className="w-3.5 h-3.5" />
+            </a>
+          )}
         </div>
       )}
+
     </div>
   </div>
 );
@@ -635,6 +678,8 @@ const ProjectsPage = () => {
                     icon={Brain}
                     status="Current Focus"
                     period="2026 · Ongoing"
+                    github="https://github.com/bers31/bernardo.github.io/tree/main/Aspect_Sentiment_Quad_Extraction_Maribaya_Glamping"
+                    live="https://bers31.github.io/bernardo.github.io/Aspect_Sentiment_Quad_Extraction_Maribaya_Glamping"
                     featured
                   />
 
@@ -785,6 +830,8 @@ const ProjectsPage = () => {
                 description="First-party review collection system for Maribaya Resort and Glamping, combining token-based access, review dashboards, and anomaly detection."
                 icon={ClipboardList}
                 iconBackground="linear-gradient(135deg, #BC5B39, #E0916D)"
+                github="https://github.com/bers31/bernardo.github.io/tree/main/Maribaya_Visitor_Review_Anomaly_Detection"
+                live="https://bers31.github.io/bernardo.github.io/Maribaya_Visitor_Review_Anomaly_Detection/"
               />
 
               <div className="aspect-[16/8] w-full bg-stone-100 overflow-hidden">
@@ -905,6 +952,8 @@ const ProjectsPage = () => {
                 description="NLP-based information chatbot that matches user input embeddings against known questions to return the most relevant answer."
                 icon={MessageSquare}
                 iconBackground="linear-gradient(135deg, #AD7F2E, #D9AD5C)"
+                github="https://github.com/bers31/bernardo.github.io/tree/main/Maribaya_Chatbot_NLP"
+                live="https://bers31.github.io/bernardo.github.io/Maribaya_Chatbot_NLP"
               />
               <div className="aspect-[16/8] w-full bg-stone-100 overflow-hidden">
                 <img src={wirakyChatbot} alt="Maribaya Chatbot interface" className="w-full h-full object-cover" loading="lazy" />
@@ -950,6 +999,8 @@ const ProjectsPage = () => {
                 description="Property intelligence system combining listing data, macroeconomic indicators, price-to-income analysis, and area-level trends for investment evaluation."
                 icon={Landmark}
                 iconBackground="linear-gradient(135deg, #2F6B4F, #5FA07E)"
+                github="https://github.com/bers31/bernardo.github.io/tree/main/Property_Data_Analysis_Investment_Intelligence"
+                live="https://bers31.github.io/bernardo.github.io/Property_Data_Analysis_Investment_Intelligence"
               />
               <div className="aspect-[16/8] w-full bg-stone-100 overflow-hidden">
                 <img src={wirakyProperti} alt="Property data analytics dashboard" className="w-full h-full object-cover" loading="lazy" />
@@ -1026,8 +1077,8 @@ const ProjectsPage = () => {
                 <img src={foto13} alt="Thesis research visualization, TF-IDF vs SBERT" className="w-full h-full object-cover" loading="lazy" />
               </div>
               <div className="p-6 sm:p-10">
-                <div className="flex flex-wrap items-start justify-between gap-4 mb-5">
-                  <div className="flex items-start gap-3">
+                <div className="flex flex-col gap-5">
+                  <div className="flex items-start gap-3 min-w-0">
                     <div className="w-10 h-10 rounded-lg bg-stone-100 flex items-center justify-center shrink-0">
                       <GraduationCap className="w-5 h-5 text-[#1C2333]" />
                     </div>
