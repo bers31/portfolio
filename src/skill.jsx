@@ -83,7 +83,7 @@ const certificates = [
 
 const credibilityStats = [
   { number: '18', label: 'Technical Skills', color: '#AD7F2E' },
-  { number: '7', label: 'Certifications', color: '#2F6B4F' },
+  { number: '9', label: 'Certifications', color: '#2F6B4F' },
   { number: '4', label: 'Key Achievements', color: '#BC5B39' },
   { number: '3', label: 'Recognition Highlights', color: '#AD7F2E' },
 ];
@@ -507,9 +507,16 @@ const Skills = () => {
                   Full case studies, from ASQE to the property database architecture, are on the Projects page.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                  <Link to="/projects" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-md font-medium text-sm text-white shadow-lg shadow-[#1C2333]/10 transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5" style={{ background: 'linear-gradient(135deg, #1C2333, #2A3450)' }}>
-                    View Projects <ExternalLink className="w-4 h-4" />
-                  </Link>
+                  <a
+                    href="https://bit.ly/bernardo-project"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group inline-flex items-center justify-center gap-2 px-6 py-3 rounded-md font-medium text-sm text-white shadow-lg shadow-[#1C2333]/10 transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5"
+                    style={{ background: 'linear-gradient(135deg, #1C2333, #2A3450)' }}
+                  >
+                    View Projects
+                    <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+                  </a>
                   <Link to="/contact" className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-stone-300 bg-white rounded-md font-medium text-sm text-[#1C2333] transition-all duration-300 hover:border-[#AD7F2E] hover:-translate-y-0.5">
                     Get In Touch
                   </Link>
