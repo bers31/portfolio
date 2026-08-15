@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import {
   Mail, Phone, Linkedin, Github, Menu, X, Award, ShieldCheck,
   Code2, BrainCircuit, BarChart3, Database, ArrowRight,
-  ExternalLink, CheckCircle2, Lock, KeyRound, UserCheck, Radar,
+  CheckCircle2, Lock, KeyRound, UserCheck, Radar,
   TrendingUp, Layers, Eye 
 } from 'lucide-react';
 
