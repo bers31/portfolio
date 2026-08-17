@@ -7,6 +7,7 @@ import {
 } from 'lucide-react';
 import foto from './images/foto.png';
 import resumeFile from './assets/CV - Bernardo Nandaniar Sunia.pdf';
+import resumeFile1 from './assets/Resume - Bernardo Nandaniar Sunia.pdf';
 
 /* ================================================================
    Design tokens (kept inline for quick reference while editing)
@@ -348,6 +349,19 @@ const Home = () => {
                   className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-stone-300 bg-white rounded-md font-medium text-sm text-[#1C2333] transition-all duration-300 hover:border-[#AD7F2E] hover:-translate-y-0.5 hover:shadow-md"
                 >
                   <Download className="w-4 h-4" /> Download CV
+                </button>
+                <button
+                  onClick={() => {
+                    const link = document.createElement('a');
+                    link.href = resumeFile1;
+                    link.download = 'Resume - Bernardo Nandaniar Sunia.pdf';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                  }}
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-stone-300 bg-white rounded-md font-medium text-sm text-[#1C2333] transition-all duration-300 hover:border-[#AD7F2E] hover:-translate-y-0.5 hover:shadow-md"
+                >
+                  <Download className="w-4 h-4" /> Download Resume
                 </button>
               </div>
               <div className="flex items-center justify-center lg:justify-start gap-3">

@@ -8,6 +8,7 @@ import {
 } from 'lucide-react';
 import foto from './images/foto.png';
 import resumeFile from './assets/CV - Bernardo Nandaniar Sunia.pdf';
+import resumeFile1 from './assets/Resume - Bernardo Nandaniar Sunia.pdf';
 
 /* ================= Data ================= */
 const NAV_ITEMS = [
@@ -300,7 +301,10 @@ const About = () => {
               </Reveal>
               <Reveal delay={100}>
                 <div className="border border-stone-200 rounded-xl bg-white p-5">
-                  <h2 className="font-mono-data text-[11px] uppercase tracking-wider text-stone-400 mb-4">Quick Facts</h2>
+                  <h2 className="font-mono-data text-[11px] uppercase tracking-wider text-stone-400 mb-4">
+                    Quick Facts
+                  </h2>
+
                   <dl className="space-y-4">
                     {quickFacts.map((f, i) => (
                       <div key={i} className="flex gap-3">
@@ -314,21 +318,47 @@ const About = () => {
                   </dl>
                 </div>
               </Reveal>
+
               <Reveal delay={150}>
-                <button
-                  onClick={() => {
-                    const link = document.createElement('a');
-                    link.href = resumeFile;
-                    link.download = 'CV - Bernardo Nandaniar Sunia.pdf';
-                    document.body.appendChild(link);
-                    link.click();
-                    document.body.removeChild(link);
-                  }}
-                  className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-md font-medium text-sm text-white shadow-lg shadow-[#1C2333]/10 transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5"
-                  style={{ background: 'linear-gradient(135deg, #1C2333, #2A3450)' }}
-                >
-                  <Download className="w-4 h-4" /> Download CV
-                </button>
+                <div className="space-y-3">
+                  {/* Download CV */}
+                  <button
+                    onClick={() => {
+                      const link = document.createElement('a');
+                      link.href = resumeFile;
+                      link.download = 'CV - Bernardo Nandaniar Sunia.pdf';
+                      document.body.appendChild(link);
+                      link.click();
+                      document.body.removeChild(link);
+                    }}
+                    className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-md font-medium text-sm text-white shadow-lg shadow-[#1C2333]/10 transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5"
+                    style={{
+                      background: 'linear-gradient(135deg, #1C2333, #2A3450)',
+                    }}
+                  >
+                    <Download className="w-4 h-4" />
+                    Download CV
+                  </button>
+
+                  {/* Download Resume */}
+                  <button
+                    onClick={() => {
+                      const link = document.createElement('a');
+                      link.href = resumeFile1;
+                      link.download = 'Resume - Bernardo Nandaniar Sunia.pdf';
+                      document.body.appendChild(link);
+                      link.click();
+                      document.body.removeChild(link);
+                    }}
+                    className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-md font-medium text-sm text-white shadow-lg shadow-[#1C2333]/10 transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5"
+                    style={{
+                      background: 'linear-gradient(135deg, #1C2333, #2A3450)',
+                    }}
+                  >
+                    <Download className="w-4 h-4" />
+                    Download Resume
+                  </button>
+                </div>
               </Reveal>
             </aside>
 

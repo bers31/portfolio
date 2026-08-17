@@ -6,6 +6,7 @@ import {
   Copy, Check, Download, ArrowRight, FolderGit2
 } from 'lucide-react';
 import resumeFile from './assets/CV - Bernardo Nandaniar Sunia.pdf';
+import resumeFile1 from './assets/Resume - Bernardo Nandaniar Sunia.pdf';
 
 /* ================= Data ================= */
 const NAV_ITEMS = [
@@ -34,7 +35,7 @@ const quickStats = [
   { number: '3.78', label: 'GPA, Cumlaude', color: '#AD7F2E' },
   { number: '94%', label: 'Best F1-Score', color: '#2F6B4F' },
   { number: '4', label: 'Systems Live in Production', color: '#BC5B39' },
-  { number: '2', label: 'IP-Registered Works', color: '#AD7F2E' },
+  { number: '9', label: 'IP-Registered Works', color: '#AD7F2E' },
 ];
 
 const availabilityCards = [
@@ -334,6 +335,20 @@ const Contact = () => {
                       className="group w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-medium hover:bg-[#F5F1E8] transition-colors"
                     >
                       <span className="flex items-center gap-2.5"><Download className="w-4 h-4 text-[#AD7F2E]" /> Download CV</span>
+                      <ArrowRight className="w-3.5 h-3.5 text-stone-300 group-hover:translate-x-0.5 transition-transform duration-300" />
+                    </button>
+                    <button
+                      onClick={() => {
+                        const link = document.createElement('a');
+                        link.href = resumeFile1;
+                        link.download = 'Resume - Bernardo Nandaniar Sunia.pdf';
+                        document.body.appendChild(link);
+                        link.click();
+                        document.body.removeChild(link);
+                      }}
+                      className="group w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-medium hover:bg-[#F5F1E8] transition-colors"
+                    >
+                      <span className="flex items-center gap-2.5"><Download className="w-4 h-4 text-[#AD7F2E]" /> Download Resume</span>
                       <ArrowRight className="w-3.5 h-3.5 text-stone-300 group-hover:translate-x-0.5 transition-transform duration-300" />
                     </button>
                   </div>
