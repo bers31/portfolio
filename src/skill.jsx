@@ -73,18 +73,18 @@ const additionalSkills = [
 ];
 
 const certificates = [
-  { title: 'ICICoS 2026 – Research Paper Author', issuer: 'Diponegoro University', year: '2026', image: sertifikat9 },
+  { title: 'ICICoS 2026 – Research Paper Author', issuer: 'Diponegoro University', year: '2026', badge: true, image: sertifikat9 },
   { title: 'Intellectual Property Certificate, Software', issuer: 'Ministry of Law, Republic of Indonesia', year: '2026', badge: true, image: sertifikat5 },
   { title: 'Intellectual Property Certificate, Chatbot', issuer: 'Ministry of Law, Republic of Indonesia', year: '2025', badge: true, image: sertifikat },
-  { title: 'Data Analysis Bootcamp', issuer: 'HaloTech Academy', year: '2025', image: sertifikat11},
-  { title: 'Data Classification and Summarization Using IBM Granite', issuer: 'IBM SkillsBuild', year: '2025', image: sertifikat6 },
-  { title: 'AI Engineer', issuer: 'Hcelerate', year: '2025', image: sertifikat7 },
+  { title: 'Data Analysis Bootcamp', issuer: 'HaloTech Academy', year: '2025', badge: true, image: sertifikat11},
+  { title: 'Data Classification and Summarization Using IBM Granite', issuer: 'IBM SkillsBuild', year: '2025', badge: true, image: sertifikat6 },
+  { title: 'AI Engineer', issuer: 'Hcelerate', year: '2025', badge: true, image: sertifikat7 },
   { title: 'Common European Framework of Reference for Languages (CEFR)', issuer: 'British Council', year: '2024', badge: true, image: sertifikat10 },
-  { title: 'PyTorch & Generative AI', issuer: 'Avalon AI', year: '2024', image: sertifikat1 },
-  { title: 'Database Programming with SQL', issuer: 'Oracle Academy', year: '2024', image: sertifikat2 },
-  { title: 'Java Programming', issuer: 'Oracle Academy', year: '2024', image: sertifikat3 },
-  { title: 'Cloud Computing', issuer: 'Alibaba Cloud', year: '2024', image: sertifikat4 },
-  { title: 'Data Analysis Bootcamp', issuer: 'Diponegoro University', year: '2023', image: sertifikat8},
+  { title: 'PyTorch & Generative AI', issuer: 'Avalon AI', year: '2024', badge: true, image: sertifikat1 },
+  { title: 'Database Programming with SQL', issuer: 'Oracle Academy', year: '2024', badge: true, image: sertifikat2 },
+  { title: 'Java Programming', issuer: 'Oracle Academy', year: '2024', badge: true, image: sertifikat3 },
+  { title: 'Cloud Computing', issuer: 'Alibaba Cloud', year: '2024', badge: true, image: sertifikat4 },
+  { title: 'Data Analysis Bootcamp', issuer: 'Diponegoro University', year: '2023', badge: true, image: sertifikat8},
 ];
 
 const credibilityStats = [
