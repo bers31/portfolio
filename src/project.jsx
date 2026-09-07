@@ -42,9 +42,9 @@ const NAV_ITEMS = [
 
 const quickLinks = [
   { id: 'asqe', label: 'ASQE' },
-  { id: 'formulir-anomali', label: 'Review & Anomaly Detection' },
+  { id: 'formulir-anomali', label: 'Guest Review Form & Anomaly Detection' },
   { id: 'chatbot', label: 'Maribaya Chatbot' },
-  { id: 'properti', label: 'Property Analytics' },
+  { id: 'properti', label: 'Property Analytics & Investment Database' },
   { id: 'thesis', label: 'Thesis' },
   { id: 'other', label: 'Other Projects' },
 ];
@@ -154,7 +154,7 @@ const gridProjects = [
     period: 'May – Jul 2025', org: 'Class II Ambarawa Correctional Facility',
     desc: 'An automated information chatbot for a correctional facility, built end to end.',
     highlights: ['Owned the process from stakeholder interviews to requirements definition', 'Optimized training datasets for response relevance', 'QA testing and post-release performance monitoring'],
-    tech: ['Python', 'NLP', 'Requirements Gathering'],
+    tech: ['Python', 'Flask', 'HTML5', 'CSS3', 'JavaScript (ES6)', 'Service Worker', 'SQLite', 'OpenAI GPT API', 'Flask-Mail', 'pywebpush', 'VAPID', 'Plotly Express'],
     impact: null,
     github: 'https://github.com/bers31/bernardo.github.io/tree/main/Automated_Information_System_Chatbot',
     live: 'https://bers31.github.io/bernardo.github.io/Automated_Information_System_Chatbot/',
@@ -165,7 +165,7 @@ const gridProjects = [
     period: 'Dec 2024 – Feb 2025', org: 'East Semarang District',
     desc: 'A full-stack financial reporting application supporting district operations and data accuracy.',
     highlights: ['Built with ReactJS, JavaScript, and SQL from the ground up', 'Owned requirements gathering through interface development', 'Trained staff for system adoption'],
-    tech: ['ReactJS', 'JavaScript', 'SQL'],
+    tech: ['React.js', 'MySQL', 'Prisma', 'ORM', 'SendGrid', 'OpenSSL', 'Express.js', 'Electron', 'Node.js'],
     impact: null,
     github: 'https://github.com/bers31/bernardo.github.io/tree/main/Financial_Reporting_Application',
     live: 'https://bers31.github.io/bernardo.github.io/Financial_Reporting_Application/',
@@ -196,7 +196,7 @@ const gridProjects = [
     period: 'Feb – Dec 2024', org: 'Environmental Research Project',
     desc: 'A predictive model projecting greenhouse gas emissions trends a decade out, to support policy consideration.',
     highlights: ['Time-series analysis for long-range projection', 'Model parameters validated with domain stakeholders', 'Data visualization for non-technical interpretation'],
-    tech: ['Python', 'R', 'Excel', 'Time Series'],
+    tech: ['Python', 'R', 'Excel', 'Time Series Forecasting'],
     impact: [{ label: 'Forecast Horizon', value: '10 yrs' }],
     github: 'https://github.com/bers31/bernardo.github.io/tree/main/Greenhouse_Gas_Emissions_Prediction%26Analysis',
     live: 'https://bers31.github.io/bernardo.github.io/Greenhouse_Gas_Emissions_Prediction%26Analysis/',
@@ -213,7 +213,7 @@ const gridProjects = [
   },
   {
     title: 'Custom Search Engine with VSM & LSI', category: 'ai-ml', image: foto10,
-    period: 'Feb – Aug 2024', org: 'Diponegoro University',
+    period: 'Mar – May 2024', org: 'Diponegoro University',
     desc: 'An Indonesian-language document search engine comparing Vector Space Model and Latent Semantic Indexing.',
     highlights: ['Indonesian text preprocessing with stopword removal (Sastrawi)', 'Retrieval extended with LSI via Truncated SVD', 'Relevance evaluated with an Accuracy@K metric'],
     tech: ['Python', 'Sastrawi', 'NLTK', 'Scikit-learn'],
