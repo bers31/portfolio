@@ -131,7 +131,7 @@ const investmentSteps = [
 const gridProjects = [
   {
     title: 'Twitter Information Diffusion & Sentiment Analysis', category: 'data-science', image: foto2,
-    period: 'Apr – Jun 2025', org: 'Universitas Diponegoro',
+    period: 'Apr – Jun 2025', org: 'Diponegoro University',
     desc: 'A Twitter analysis pipeline for understanding information diffusion and sentiment, from API scraping to network modeling.',
     highlights: ['Analyzed 500K+ tweets for sentiment and diffusion modeling', 'Reached 92% sentiment classification accuracy with ensemble methods', 'Identified the top 1% most influential users and 3 major community clusters'],
     tech: ['Python', 'Tweepy', 'NetworkX', 'Scikit-learn'],
@@ -141,7 +141,7 @@ const gridProjects = [
   },
   {
     title: 'Advanced Information Retrieval System', category: 'ai-ml', image: foto3,
-    period: 'Aug – Dec 2024', org: 'Universitas Diponegoro',
+    period: 'Aug – Dec 2024', org: 'Diponegoro University',
     desc: 'A multilingual (Indonesian-English) semantic search system with fine-tuned mBERT and FAISS indexing.',
     highlights: ['Fine-tuned mBERT for cross-lingual semantic understanding', 'FAISS embeddings outperforming a BM25 baseline', 'Demonstrated through an interactive Streamlit demo'],
     tech: ['Python', 'mBERT', 'PyTorch', 'FAISS', 'Streamlit'],
@@ -173,7 +173,7 @@ const gridProjects = [
   },
   {
     title: 'Student Performance Clustering', category: 'data-science', image: foto5,
-    period: 'Aug – Dec 2024', org: 'Universitas Diponegoro',
+    period: 'Aug – Dec 2024', org: 'Diponegoro University',
     desc: 'An unsupervised learning system grouping student performance to support more targeted educational intervention.',
     highlights: ['K-Means clustering for performance segmentation', 'Cluster quality validated with silhouette score', 'Interactive Streamlit interface for educators'],
     tech: ['Python', 'K-Means', 'Scikit-learn', 'Streamlit'],
@@ -183,7 +183,7 @@ const gridProjects = [
   },
   {
     title: 'Advanced Customer Segmentation', category: 'data-science', image: foto9,
-    period: 'Aug – Dec 2024', org: 'Universitas Diponegoro',
+    period: 'Aug – Dec 2024', org: 'Diponegoro University',
     desc: 'A supervised learning system for customer segmentation, supporting more targeted marketing strategy.',
     highlights: ['Compared four models: Random Forest, SVM, XGBoost, k-NN', 'Systematic evaluation and hyperparameter tuning', 'Results explored through a Streamlit interface'],
     tech: ['Python', 'Random Forest', 'SVM', 'XGBoost'],
@@ -203,7 +203,7 @@ const gridProjects = [
   },
   {
     title: 'Student Academic Information System', category: 'full-stack', image: foto8,
-    period: 'Feb – Dec 2024', org: 'Universitas Diponegoro',
+    period: 'Feb – Dec 2024', org: 'Diponegoro University',
     desc: 'An integrated academic management platform for course registration and academic data.',
     highlights: ['Serving 1,000+ students and 100+ academic advisors', 'Sped up course registration by 30% through automation', 'Authentication and user data protection'],
     tech: ['Laravel', 'MySQL', 'PHP', 'Bootstrap'],
@@ -213,7 +213,7 @@ const gridProjects = [
   },
   {
     title: 'Custom Search Engine with VSM & LSI', category: 'ai-ml', image: foto10,
-    period: 'Feb – Aug 2024', org: 'Universitas Diponegoro',
+    period: 'Feb – Aug 2024', org: 'Diponegoro University',
     desc: 'An Indonesian-language document search engine comparing Vector Space Model and Latent Semantic Indexing.',
     highlights: ['Indonesian text preprocessing with stopword removal (Sastrawi)', 'Retrieval extended with LSI via Truncated SVD', 'Relevance evaluated with an Accuracy@K metric'],
     tech: ['Python', 'Sastrawi', 'NLTK', 'Scikit-learn'],
@@ -223,7 +223,7 @@ const gridProjects = [
   },
   {
     title: '3D Minecraft-Themed Game Development', category: 'game', image: foto7,
-    period: 'Jan – Jun 2024', org: 'Universitas Diponegoro',
+    period: 'Jan – Jun 2024', org: 'Diponegoro University',
     desc: 'An interactive 3D game with an explorable world, built from scratch with OpenGL.',
     highlights: ['Interactive 3D world rendering with matrix manipulation', 'Control system designed for smooth gameplay'],
     tech: ['C++', 'OpenGL', '3D Graphics'],
@@ -677,7 +677,7 @@ const ProjectsPage = () => {
                     description="A production-focused NLP system for turning Maribaya guest reviews into structured aspect, opinion, category, and sentiment signals."
                     icon={Brain}
                     status="Current Focus"
-                    period="2026 · Ongoing"
+                    period="2026"
                     github="https://github.com/bers31/bernardo.github.io/tree/main/Aspect_Sentiment_Quad_Extraction_Maribaya_Glamping"
                     live="https://bers31.github.io/bernardo.github.io/Aspect_Sentiment_Quad_Extraction_Maribaya_Glamping"
                     featured
@@ -830,6 +830,7 @@ const ProjectsPage = () => {
                 description="First-party review collection system for Maribaya Resort and Glamping, combining token-based access, review dashboards, and anomaly detection."
                 icon={ClipboardList}
                 iconBackground="linear-gradient(135deg, #BC5B39, #E0916D)"
+                period="2026"
                 github="https://github.com/bers31/bernardo.github.io/tree/main/Maribaya_Visitor_Review_Anomaly_Detection"
                 live="https://bers31.github.io/bernardo.github.io/Maribaya_Visitor_Review_Anomaly_Detection/"
               />
@@ -859,14 +860,6 @@ const ProjectsPage = () => {
                       <li className="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-[#AD7F2E]">Full review data exportable as CSV</li>
                       <li className="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-[#AD7F2E]">Two separate dashboards: Maribaya Resort and Glamping Tent</li>
                     </ul>
-                    <div className="flex flex-wrap gap-2 mt-3">
-                      <a href="https://visualisasi-review-production.up.railway.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-xs font-medium text-[#1C2333] border border-stone-200 rounded-full px-3 py-1.5 hover:border-[#AD7F2E] transition-colors">
-                        Resort Dashboard <ExternalLink className="w-3 h-3" />
-                      </a>
-                      <a href="https://visualisasi-glamping-review-production.up.railway.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-xs font-medium text-[#1C2333] border border-stone-200 rounded-full px-3 py-1.5 hover:border-[#AD7F2E] transition-colors">
-                        Glamping Dashboard <ExternalLink className="w-3 h-3" />
-                      </a>
-                    </div>
                   </div>
                 </div>
 
@@ -952,6 +945,7 @@ const ProjectsPage = () => {
                 description="NLP-based information chatbot that matches user input embeddings against known questions to return the most relevant answer."
                 icon={MessageSquare}
                 iconBackground="linear-gradient(135deg, #AD7F2E, #D9AD5C)"
+                period="2026"
                 github="https://github.com/bers31/bernardo.github.io/tree/main/Maribaya_Chatbot_NLP"
                 live="https://bers31.github.io/bernardo.github.io/Maribaya_Chatbot_NLP"
               />
@@ -999,6 +993,7 @@ const ProjectsPage = () => {
                 description="Property intelligence system combining listing data, macroeconomic indicators, price-to-income analysis, and area-level trends for investment evaluation."
                 icon={Landmark}
                 iconBackground="linear-gradient(135deg, #2F6B4F, #5FA07E)"
+                period="2026"
                 github="https://github.com/bers31/bernardo.github.io/tree/main/Property_Data_Analysis_Investment_Intelligence"
                 live="https://bers31.github.io/bernardo.github.io/Property_Data_Analysis_Investment_Intelligence"
               />
@@ -1084,7 +1079,7 @@ const ProjectsPage = () => {
                     </div>
                     <div>
                       <h3 className="font-display font-semibold text-lg leading-snug">TF-IDF vs. SBERT for Aspect Sentiment Classification on E-Commerce Reviews</h3>
-                      <p className="text-sm text-stone-500">Thesis, Universitas Diponegoro</p>
+                      <p className="text-sm text-stone-500">Thesis, Diponegoro University</p>
                     </div>
                   </div>
                   <span className="font-mono-data text-xs text-stone-400 shrink-0">Aug 2025 – Feb 2026</span>

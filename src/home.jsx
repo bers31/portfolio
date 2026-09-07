@@ -52,9 +52,9 @@ const otherProjectsTeaser = [
 ];
 
 const experiencePreview = [
-  { icon: Briefcase, role: 'Data Analyst', company: 'PT Wiraky Nusa Telekomunikasi', period: '2026 – Present', current: true },
+  { icon: Briefcase, role: 'Data Analyst', company: 'PT Wiraky Nusa Telekomunikasi', period: 'May 2026 – Present', current: true },
   { icon: Briefcase, role: 'Automated Information System Chatbot Developer', company: 'Class II Ambarawa Correctional Facility', period: 'May – Jul 2025', current: false },
-  { icon: GraduationCap, role: 'Laboratory Teaching Assistant', company: 'Computer Laboratory, Universitas Diponegoro', period: 'Jun 2023 – Jun 2025', current: false },
+  { icon: GraduationCap, role: 'Laboratory Teaching Assistant', company: 'Computer Laboratory, Diponegoro University', period: 'Jun 2023 – Jun 2025', current: false },
 ];
 
 // Real example from the work report: "Tempatnya bagus, tapi parkirannya sempit."
@@ -316,7 +316,7 @@ const Home = () => {
                 NLP Engineer <span className="text-stone-400">·</span> Data Scientist <span className="text-stone-400">·</span> Machine Learning Engineer
               </p>
               <p className="text-base lg:text-lg text-stone-600 leading-relaxed max-w-xl mx-auto lg:mx-0 mb-6">
-                Informatics graduate from Universitas Diponegoro, Cum Laude with a GPA of 3.78, and Data Analyst at PT Wiraky Nusa Telekomunikasi. Focused on data analytics, NLP, and aspect-based sentiment analysis, with experience developing ASQE to transform unstructured customer reviews into structured insights for data-driven decision-making
+                Informatics graduate from Diponegoro University, Cum Laude with a GPA of 3.78, and Data Analyst at PT Wiraky Nusa Telekomunikasi. Focused on data analytics, NLP, and aspect-based sentiment analysis, with experience developing ASQE to transform unstructured customer reviews into structured insights for data-driven decision-making
               </p>
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 mb-8">
                 <span className="inline-flex items-center gap-1.5 font-mono-data text-[11px] font-medium text-[#1C2333] border border-stone-300 rounded-full px-3 py-1.5 bg-white shadow-[0_2px_8px_rgba(28,35,51,0.06)]">

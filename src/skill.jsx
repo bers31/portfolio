@@ -16,6 +16,9 @@ import sertifikat5 from './images/sertifikat5.jpg';
 import sertifikat6 from './images/sertifikat6.jpg';
 import sertifikat7 from './images/sertifikat7.png';
 import sertifikat8 from './images/sertifikat8.jpg';
+import sertifikat9 from './images/sertifikat9.png';
+import sertifikat10 from './images/sertifikat10.jpg';
+import sertifikat11 from './images/sertifikat11.jpg';
 
 /* ================= Data ================= */
 const NAV_ITEMS = [
@@ -70,26 +73,29 @@ const additionalSkills = [
 ];
 
 const certificates = [
+  { title: 'ICICoS 2026 – Research Paper Author', issuer: 'Diponegoro University', year: '2026', image: sertifikat9 },
   { title: 'Intellectual Property Certificate, Software', issuer: 'Ministry of Law, Republic of Indonesia', year: '2026', badge: true, image: sertifikat5 },
   { title: 'Intellectual Property Certificate, Chatbot', issuer: 'Ministry of Law, Republic of Indonesia', year: '2025', badge: true, image: sertifikat },
+  { title: 'Data Analysis Bootcamp', issuer: 'HaloTech Academy', year: '2025', image: sertifikat11},
   { title: 'Data Classification and Summarization Using IBM Granite', issuer: 'IBM SkillsBuild', year: '2025', image: sertifikat6 },
   { title: 'AI Engineer', issuer: 'Hcelerate', year: '2025', image: sertifikat7 },
+  { title: 'Common European Framework of Reference for Languages (CEFR)', issuer: 'British Council', year: '2024', badge: true, image: sertifikat10 },
   { title: 'PyTorch & Generative AI', issuer: 'Avalon AI', year: '2024', image: sertifikat1 },
   { title: 'Database Programming with SQL', issuer: 'Oracle Academy', year: '2024', image: sertifikat2 },
   { title: 'Java Programming', issuer: 'Oracle Academy', year: '2024', image: sertifikat3 },
   { title: 'Cloud Computing', issuer: 'Alibaba Cloud', year: '2024', image: sertifikat4 },
-  { title: 'Data Analysis Bootcamp', issuer: 'Universitas Diponegoro', year: '2023', image: sertifikat8},
+  { title: 'Data Analysis Bootcamp', issuer: 'Diponegoro University', year: '2023', image: sertifikat8},
 ];
 
 const credibilityStats = [
   { number: '18', label: 'Technical Skills', color: '#AD7F2E' },
-  { number: '9', label: 'Certifications', color: '#2F6B4F' },
+  { number: '12', label: 'Certifications', color: '#2F6B4F' },
   { number: '4', label: 'Key Achievements', color: '#BC5B39' },
   { number: '3', label: 'Recognition Highlights', color: '#AD7F2E' },
 ];
 
 const recognitionHighlights = [
-  { icon: Award, title: 'Cumlaude Graduate', desc: 'GPA 3.78, Universitas Diponegoro, 2026' },
+  { icon: Award, title: 'Cumlaude Graduate', desc: 'GPA 3.78, Diponegoro University, 2026' },
   { icon: ShieldCheck, title: 'IP Certificate: Software', desc: 'Ministry of Law RI, 2026' },
   { icon: ShieldCheck, title: 'IP Certificate: Chatbot', desc: 'Ministry of Law RI, 2025' },
 ];
@@ -105,7 +111,7 @@ const achievements = [
   },
   {
     icon: Award, metric: '3.78', title: 'Cumlaude Graduate', color: '#BC5B39',
-    desc: 'GPA out of 4.0, Bachelor of Informatics, Universitas Diponegoro, awarded March 2026.',
+    desc: 'GPA out of 4.0, Bachelor of Informatics, Diponegoro University, awarded March 2026.',
   },
   {
     icon: Layers, metric: '4', title: 'Production-Grade Systems', color: '#2F6B4F',

@@ -127,7 +127,7 @@ const experiences = [
   },
   {
     role: 'Laboratory Teaching Assistant',
-    company: 'Computer Laboratory, Universitas Diponegoro',
+    company: 'Computer Laboratory, Diponegoro University',
     period: 'Jun 2023 – Jun 2025',
     duration: '2 years',
     type: 'Part-Time',
@@ -529,7 +529,7 @@ const ExperiencePage = () => {
                   <div className="flex flex-wrap items-start justify-between gap-3">
                     <div>
                       <h3 className="font-display font-semibold leading-snug">Bachelor of Informatics</h3>
-                      <p className="text-sm text-stone-500">Universitas Diponegoro, GPA 3.78 (Cumlaude)</p>
+                      <p className="text-sm text-stone-500">Diponegoro University, GPA 3.78 (Cumlaude)</p>
                     </div>
                     <div className="flex flex-col items-start sm:items-end gap-1 text-xs text-stone-400 shrink-0">
                       <span className="font-mono-data">Aug 2022 – Mar 2026</span>

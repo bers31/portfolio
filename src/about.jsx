@@ -274,10 +274,10 @@ const About = () => {
               <span className="w-6 h-px bg-[#AD7F2E]" /> About
             </div>
             <h1 className="font-display text-4xl sm:text-5xl font-semibold leading-[1.15] max-w-3xl mb-6">
-              Informatics graduate. Data Analyst. Builder of production NLP systems.
+              Informatics graduate. Data Science. Builder of production NLP systems.
             </h1>
             <p className="text-base lg:text-lg text-stone-600 leading-relaxed max-w-2xl">
-              I work at the intersection of data analysis, machine learning, and natural language processing, with customer reviews as the raw material I turn into structured, decision-ready data most often.
+              I work at the intersection of data science, machine learning, and natural language processing, with customer reviews as the raw material I turn into structured, decision-ready data most often.
             </p>
           </Reveal>
         </div>
