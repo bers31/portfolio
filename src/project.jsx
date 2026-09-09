@@ -233,7 +233,7 @@ const gridProjects = [
   },
   {
     title: 'YC Electric E-Commerce Platform', category: 'web', image: foto6,
-    period: 'Jan 2022 – Jan 2024', org: 'YC Electric',
+    period: 'Aug 2023 – Jan 2024', org: 'YC Electric',
     desc: "The company's first custom e-commerce platform, from planning through launch.",
     highlights: ['SEO optimization to grow organic traffic', 'Managed 100+ products with active daily transactions', 'Secure authentication and payment handling'],
     tech: ['HTML5', 'CSS3', 'JavaScript', 'MySQL', 'PHP'],
