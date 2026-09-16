@@ -46,14 +46,33 @@ const focusAreas = [
 ];
 
 const otherProjectsTeaser = [
-  { category: 'PT Wiraky Nusa Telekomunikasi', title: 'Maribaya Chatbot', desc: 'An NLP embedding-based chatbot that answers visitor questions, with an admin dashboard and automatic log rotation.', color: '#AD7F2E' },
-  { category: 'PT Wiraky Nusa Telekomunikasi', title: 'Review Form & Anomaly Detection', desc: '15-minute access tokens and a 3-tier anomaly detection system for Maribaya & Glamping guest reviews.', color: '#BC5B39' },
-  { category: 'PT Wiraky Nusa Telekomunikasi', title: 'Property Data Analytics', desc: 'A dual-schema database, operational and analytical, for judging fair pricing and investment potential.', color: '#2F6B4F' },
+  {
+    id: 'chatbot',
+    category: 'PT Wiraky Nusa Telekomunikasi',
+    title: 'Maribaya Chatbot',
+    desc: 'An NLP embedding-based chatbot that answers visitor questions, with an admin dashboard and automatic log rotation.',
+    color: '#AD7F2E',
+  },
+  {
+    id: 'formulir-anomali',
+    category: 'PT Wiraky Nusa Telekomunikasi',
+    title: 'Review Form & Anomaly Detection',
+    desc: '15-minute access tokens and a 3-tier anomaly detection system for Maribaya & Glamping guest reviews.',
+    color: '#BC5B39',
+  },
+  {
+    id: 'properti',
+    category: 'PT Wiraky Nusa Telekomunikasi',
+    title: 'Property Data Analytics',
+    desc: 'A dual-schema database, operational and analytical, for judging fair pricing and investment potential.',
+    color: '#2F6B4F',
+  },
 ];
 
+
 const experiencePreview = [
-  { icon: Briefcase, role: 'Data Analyst', company: 'PT Wiraky Nusa Telekomunikasi', period: 'May 2026 – Present', current: true },
-  { icon: Briefcase, role: 'Automated Information System Chatbot Developer', company: 'Class II Ambarawa Correctional Facility', period: 'May – Jul 2025', current: false },
+  { icon: Briefcase, role: 'Staff IT Data Analyst', company: 'PT Wiraky Nusa Telekomunikasi', period: 'May 2026 – Jul 2026', current: true },
+  { icon: Briefcase, role: 'Automated Information System Chatbot Developer', company: 'Class II Ambarawa Correctional Facility', period: 'May 2025 – Jul 2025', current: false },
   { icon: GraduationCap, role: 'Laboratory Teaching Assistant', company: 'Computer Laboratory, Diponegoro University', period: 'Jun 2023 – Jun 2025', current: false },
 ];
 
@@ -498,7 +517,7 @@ const Home = () => {
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <Reveal className="flex items-center justify-between mb-8">
             <h2 className="font-display text-2xl lg:text-3xl font-semibold">More From PT Wiraky Nusa Telekomunikasi</h2>
-            <Link to="/projects" className="hidden sm:inline-flex items-center gap-1.5 text-sm font-medium text-stone-500 hover:text-[#1C2333] transition-colors">
+            <Link to={`/projects#${p.id}`} className="hidden sm:inline-flex items-center gap-1.5 text-sm font-medium text-stone-500 hover:text-[#1C2333] transition-colors">
               See all <ArrowRight className="w-4 h-4" />
             </Link>
           </Reveal>
@@ -506,7 +525,7 @@ const Home = () => {
             {otherProjectsTeaser.map((p, i) => (
               <Reveal key={i} delay={i * 100}>
                 <Link
-                  to="/projects"
+                  to={`/projects#${p.id}`}
                   className="group block h-full p-5 rounded-xl bg-white border border-stone-200 overflow-hidden relative transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
                 >
                   <div className="absolute top-0 left-0 right-0 h-1" style={{ background: p.color }} />
@@ -591,7 +610,7 @@ const Home = () => {
                   <div className="flex-1 min-w-0">
                     <div className="flex flex-wrap items-center gap-2">
                       <h3 className="font-display font-semibold">{exp.role}</h3>
-                      {exp.current && <span className="font-mono-data text-[10px] uppercase tracking-wider bg-[#2F6B4F]/10 text-[#2F6B4F] px-2 py-0.5 rounded-full">Current</span>}
+                      {exp.current && <span className="font-mono-data text-[10px] uppercase tracking-wider bg-[#2F6B4F]/10 text-[#2F6B4F] px-2 py-0.5 rounded-full">Newest</span>}
                     </div>
                     <p className="text-sm text-stone-500">{exp.company}</p>
                   </div>

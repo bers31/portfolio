@@ -29,6 +29,8 @@ import foto10 from './images/foto10.png';
 import foto11 from './images/foto11.png';
 import foto12 from './images/foto12.png';
 import foto13 from './images/foto13.png';
+import foto14 from './images/foto14.png';
+import foto15 from './images/foto15.png';
 
 /* ================= Data ================= */
 const NAV_ITEMS = [
@@ -129,6 +131,79 @@ const investmentSteps = [
 ];
 
 const gridProjects = [
+  {
+    title: 'Ask Lee Kuan Yew — Grounded RAG Chatbot',
+    category: 'ai-ml',
+    image: foto14, // ganti dengan gambar asli
+    period: '2026',
+    org: 'Personal Project',
+    desc: "A grounded RAG chatbot answering questions from Lee Kuan Yew's documented speeches and public archival records through decoupled document indexing and real-time query processing.",
+    highlights: [
+      'Designed and built two decoupled pipelines for offline document indexing and real-time query processing',
+      'Engineered a PDF-to-vector ingestion pipeline with abbreviation-aware sentence chunking and overlap-based context preservation',
+      'Implemented task-type-aware semantic retrieval with gemini-embedding-001, ChromaDB, and Gemini 2.5 Flash',
+      'Designed strict hallucination controls with evidence-based citations, fabricated-quote prevention, and explicit abstention',
+      'Built a source-aware data pipeline storing metadata and provenance publicly while re-fetching primary documents at runtime',
+      'Created a 24-question evaluation benchmark across 9 topical categories and adversarial cases',
+      'Developed a Streamlit interface showing both generated answers and retrieved passages for transparent debugging',
+    ],
+    tech: [
+      'Python',
+      'Streamlit',
+      'Google Gemini API',
+      'Gemini 2.5 Flash',
+      'gemini-embedding-001',
+      'ChromaDB',
+      'pypdf',
+      'Pydantic',
+    ],
+    impact: [
+      { label: 'Evaluation Questions', value: '24' },
+      { label: 'Topic Categories', value: '9' },
+      { label: 'Pipelines', value: '2' },
+    ],
+    github: 'YOUR_GITHUB_URL',
+    live: 'YOUR_LIVE_URL',
+    note: 'Architecture, data-governance decisions, evaluation methodology, and engineering iterations documented for reproducibility and technical review.',
+  },
+
+  {
+    title: 'Property Knowledge Quiz Builder',
+    category: 'ai-ml',
+    image: foto15, // ganti dengan gambar asli
+    period: '2026',
+    org: 'Personal Project',
+    desc: 'An AI-powered employee training quiz generator with schema-constrained generation, deterministic validation, LLM-based quality review, automatic retry, and interactive assessment.',
+    highlights: [
+      'Designed and built a five-stage pipeline: generation, structural validation, AI quality review, automatic retry, and interactive assessment',
+      'Implemented schema-constrained generation with Gemini response_schema and Pydantic',
+      'Engineered a two-stage QA system combining deterministic validation with independent LLM-as-judge review',
+      'Built a self-healing retry mechanism with up to three regeneration attempts and per-attempt failure logging',
+      'Designed a parameterized pipeline supporting five audiences, three difficulty levels, and two languages',
+      'Developed a stateful Streamlit interface using session_state for generation, answer collection, scoring, and explanations',
+      'Structured the codebase into single-responsibility modules with AI logic decoupled from UI logic',
+      'Deployed end-to-end using Gemini API free tier and Streamlit Community Cloud',
+    ],
+    tech: [
+      'Python',
+      'Streamlit',
+      'Google Gemini API',
+      'Gemini 2.5 Flash',
+      'google-genai SDK',
+      'Pydantic',
+      'python-dotenv',
+      'Git/GitHub',
+      'Streamlit Community Cloud',
+    ],
+    impact: [
+      { label: 'Audiences', value: '5' },
+      { label: 'Difficulty Levels', value: '3' },
+      { label: 'Languages', value: '2' },
+    ],
+    github: 'YOUR_GITHUB_URL',
+    live: 'YOUR_LIVE_URL',
+    note: 'Architecture, prompt templates, and AI-usage rationale documented for reproducibility and technical review.',
+  },
   {
     title: 'Twitter Information Diffusion & Sentiment Analysis', category: 'data-science', image: foto2,
     period: 'Apr – Jun 2025', org: 'Diponegoro University',

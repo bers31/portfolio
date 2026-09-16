@@ -23,7 +23,7 @@ const NAV_ITEMS = [
 const quickFacts = [
   { icon: MapPin, label: 'Location', value: 'Semarang, Indonesia' },
   { icon: GraduationCap, label: 'Education', value: 'BSc Informatics, Universitas Diponegoro' },
-  { icon: Briefcase, label: 'Current Role', value: 'Data Analyst, PT Wiraky Nusa Telekomunikasi' },
+  { icon: Briefcase, label: 'Newest Role', value: 'Staff IT Data Analyst, PT Wiraky Nusa Telekomunikasi' },
   { icon: Languages, label: 'Languages', value: 'Indonesian (native), English (CEFR 488)' },
   { icon: Compass, label: 'Current Focus', value: 'NLP & Aspect-Based Sentiment Analysis' },
 ];
