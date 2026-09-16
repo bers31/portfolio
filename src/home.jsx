@@ -517,7 +517,7 @@ const Home = () => {
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <Reveal className="flex items-center justify-between mb-8">
             <h2 className="font-display text-2xl lg:text-3xl font-semibold">More From PT Wiraky Nusa Telekomunikasi</h2>
-            <Link to={`/projects#${p.id}`} className="hidden sm:inline-flex items-center gap-1.5 text-sm font-medium text-stone-500 hover:text-[#1C2333] transition-colors">
+            <Link to="/projects" className="hidden sm:inline-flex items-center gap-1.5 text-sm font-medium text-stone-500 hover:text-[#1C2333] transition-colors">
               See all <ArrowRight className="w-4 h-4" />
             </Link>
           </Reveal>
