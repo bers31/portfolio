@@ -134,7 +134,7 @@ const gridProjects = [
   {
     title: 'Ask Lee Kuan Yew — Grounded RAG Chatbot',
     category: 'ai-ml',
-    image: foto14, // ganti dengan gambar asli
+    image: foto15, // ganti dengan gambar asli
     period: '2026',
     org: 'Personal Project',
     desc: "A grounded RAG chatbot answering questions from Lee Kuan Yew's documented speeches and public archival records through decoupled document indexing and real-time query processing.",
@@ -162,15 +162,15 @@ const gridProjects = [
       { label: 'Topic Categories', value: '9' },
       { label: 'Pipelines', value: '2' },
     ],
-    github: 'YOUR_GITHUB_URL',
-    live: 'YOUR_LIVE_URL',
+    github: 'https://github.com/bers31/bernardo.github.io/tree/main/LKY-Chatbot',
+    live: 'https://bers31.github.io/bernardo.github.io/LKY-Chatbot',
     note: 'Architecture, data-governance decisions, evaluation methodology, and engineering iterations documented for reproducibility and technical review.',
   },
 
   {
     title: 'Property Knowledge Quiz Builder',
     category: 'ai-ml',
-    image: foto15, // ganti dengan gambar asli
+    image: foto14, // ganti dengan gambar asli
     period: '2026',
     org: 'Personal Project',
     desc: 'An AI-powered employee training quiz generator with schema-constrained generation, deterministic validation, LLM-based quality review, automatic retry, and interactive assessment.',
@@ -200,8 +200,8 @@ const gridProjects = [
       { label: 'Difficulty Levels', value: '3' },
       { label: 'Languages', value: '2' },
     ],
-    github: 'YOUR_GITHUB_URL',
-    live: 'YOUR_LIVE_URL',
+    github: 'https://github.com/bers31/bernardo.github.io/tree/main/Property-Quiz-Builder',
+    live: 'https://bers31.github.io/bernardo.github.io/Property-Quiz-Builder',
     note: 'Architecture, prompt templates, and AI-usage rationale documented for reproducibility and technical review.',
   },
   {
@@ -330,7 +330,7 @@ const gridProjects = [
 
 const categories = [
   { key: 'all', label: 'All', icon: Layers, count: gridProjects.length },
-  { key: 'ai-ml', label: 'AI & Machine Learning', icon: Brain, count: gridProjects.filter(p => p.category === 'ai-ml').length },
+  { key: 'ai-ml', label: 'AI & ML', icon: Brain, count: gridProjects.filter(p => p.category === 'ai-ml').length },
   { key: 'data-science', label: 'Data Science', icon: BarChart3, count: gridProjects.filter(p => p.category === 'data-science').length },
   { key: 'data-analysis', label: 'Data Analysis', icon: Target, count: gridProjects.filter(p => p.category === 'data-analysis').length },
   { key: 'full-stack', label: 'Full-Stack', icon: Code2, count: gridProjects.filter(p => p.category === 'full-stack').length },

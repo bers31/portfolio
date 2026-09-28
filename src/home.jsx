@@ -326,13 +326,13 @@ const Home = () => {
           <div className="flex flex-col-reverse lg:flex-row items-center gap-14 lg:gap-20">
             <Reveal className="flex-1 text-center lg:text-left">
               <div className="inline-flex items-center gap-2 font-mono-data text-xs tracking-widest uppercase text-[#AD7F2E] mb-5">
-                <Sparkles className="w-3.5 h-3.5" /> NLP Engineer · Data Scientist · ML Engineer
+                <Sparkles className="w-3.5 h-3.5" /> Data Engineer · Data Scientist · AI/ML Engineer
               </div>
               <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-semibold leading-[1.08] mb-4">
                 Bernardo Nandaniar <span className="gradient-text">Sunia</span>
               </h1>
               <p className="font-display text-xl lg:text-2xl text-[#1C2333]/70 font-medium mb-5">
-                NLP Engineer <span className="text-stone-400">·</span> Data Scientist <span className="text-stone-400">·</span> Machine Learning Engineer
+                Data Engineer <span className="text-stone-400">·</span> Data Scientist <span className="text-stone-400">·</span> AI/ML Engineer
               </p>
               <p className="text-base lg:text-lg text-stone-600 leading-relaxed max-w-xl mx-auto lg:mx-0 mb-6">
                 Informatics graduate from Diponegoro University, Cum Laude with a GPA of 3.78, and Data Analyst at PT Wiraky Nusa Telekomunikasi. Focused on data analytics, NLP, and aspect-based sentiment analysis, with experience developing ASQE to transform unstructured customer reviews into structured insights for data-driven decision-making
