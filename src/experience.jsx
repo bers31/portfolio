@@ -24,7 +24,7 @@ const headerBadges = [
 ];
 
 const experienceStats = [
-  { number: '4+', label: 'Years of Combined Experience', icon: Clock, color: '#AD7F2E' },
+  { number: '2+', label: 'Years of Profesional Experience', icon: Clock, color: '#AD7F2E' },
   { number: '5', label: 'Professional Roles Held', icon: Briefcase, color: '#2F6B4F' },
   { number: '20+', label: 'Students Mentored Per Semester', icon: Users, color: '#BC5B39' },
   { number: '15%', label: 'Lab Grade Improvement', icon: TrendingUp, color: '#AD7F2E' },
