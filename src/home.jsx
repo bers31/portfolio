@@ -71,7 +71,8 @@ const otherProjectsTeaser = [
 
 
 const experiencePreview = [
-  { icon: Briefcase, role: 'Staff IT Data Analyst', company: 'PT Wiraky Nusa Telekomunikasi', period: 'May 2026 – Jul 2026', current: true },
+  { icon: Briefcase, role: 'Assistant Manager, Supply Chain Assistant & Creative Designer', company: 'YC Electric', period: 'Jul – Present', current: true },
+  { icon: Briefcase, role: 'Staff IT Data Analyst', company: 'PT Wiraky Nusa Telekomunikasi', period: 'May 2026 – Jul 2026', current: false },
   { icon: Briefcase, role: 'Automated Information System Chatbot Developer', company: 'Class II Ambarawa Correctional Facility', period: 'May 2025 – Jul 2025', current: false },
   { icon: GraduationCap, role: 'Laboratory Teaching Assistant', company: 'Computer Laboratory, Diponegoro University', period: 'Jun 2023 – Jun 2025', current: false },
 ];

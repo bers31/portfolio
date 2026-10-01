@@ -106,6 +106,25 @@ const wirakyStreams = [
 ];
 
 const experiences = [
+    {
+    role: 'Assistant Manager, Supply Chain Assistant & Creative Designer',
+    company: 'YC Electric',
+    period: 'Jul 2019 – Present',
+    duration: '7 years',
+    type: 'Part-Time',
+    location: 'Semarang, Indonesia',
+    icon: Users,
+    color: '#AD7F2E',
+    desc: 'Three roles at once: operations, logistics, and design. An early lesson in working across functions.',
+    points: [
+      'Optimized inventory tracking and simplified supplier logistics',
+      'Produced 30+ promotional materials using digital design tools',
+      'Strengthened brand visibility through consistent marketing materials',
+    ],
+    tags: ['Inventory Management', 'Supply Chain', 'Adobe Photoshop & Illustrator'],
+    github: 'https://github.com/bers31/bernardo.github.io/tree/main/Custom_E_Commerce_Website',
+    live: 'https://bers31.github.io/bernardo.github.io/Custom_E_Commerce_Website/',
+  },
   {
     role: 'Automated Information System Chatbot Developer',
     company: 'Class II Ambarawa Correctional Facility',
@@ -160,25 +179,6 @@ const experiences = [
     tags: ['ReactJS', 'JavaScript', 'SQL', 'Full-Stack'],
     github: 'https://github.com/bers31/bernardo.github.io/tree/main/Financial_Reporting_Application',
     live: 'https://bers31.github.io/bernardo.github.io/Financial_Reporting_Application/',
-  },
-  {
-    role: 'Assistant Manager, Supply Chain Assistant & Creative Designer',
-    company: 'YC Electric',
-    period: 'Jan 2022 – Dec 2024',
-    duration: '3 years',
-    type: 'Part-Time',
-    location: 'Semarang, Indonesia',
-    icon: Users,
-    color: '#AD7F2E',
-    desc: 'Three roles at once: operations, logistics, and design. An early lesson in working across functions.',
-    points: [
-      'Optimized inventory tracking and simplified supplier logistics',
-      'Produced 30+ promotional materials using digital design tools',
-      'Strengthened brand visibility through consistent marketing materials',
-    ],
-    tags: ['Inventory Management', 'Supply Chain', 'Adobe Photoshop & Illustrator'],
-    github: 'https://github.com/bers31/bernardo.github.io/tree/main/Custom_E_Commerce_Website',
-    live: 'https://bers31.github.io/bernardo.github.io/Custom_E_Commerce_Website/',
   },
 ];
 
@@ -401,8 +401,7 @@ const ExperiencePage = () => {
                       </div>
                       <div>
                         <div className="flex flex-wrap items-center gap-2 mb-1">
-                          <h2 className="font-display text-xl sm:text-2xl font-semibold text-white">Data Analyst</h2>
-                          <span className="font-mono-data text-[10px] uppercase tracking-wider bg-[#5FA07E]/25 text-[#B8E4CC] px-2 py-0.5 rounded-full">Current</span>
+                          <h2 className="font-display text-xl sm:text-2xl font-semibold text-white">IT Staff Data Analyst</h2>
                           <span className="font-mono-data text-[10px] uppercase tracking-wider bg-white/10 text-stone-300 px-2 py-0.5 rounded-full">Full-Time</span>
                         </div>
                         <p className="text-stone-300 text-sm">PT Wiraky Nusa Telekomunikasi</p>
