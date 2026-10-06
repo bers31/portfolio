@@ -611,7 +611,7 @@ const Home = () => {
                   <div className="flex-1 min-w-0">
                     <div className="flex flex-wrap items-center gap-2">
                       <h3 className="font-display font-semibold">{exp.role}</h3>
-                      {exp.current && <span className="font-mono-data text-[10px] uppercase tracking-wider bg-[#2F6B4F]/10 text-[#2F6B4F] px-2 py-0.5 rounded-full">Newest</span>}
+                      {exp.current && <span className="font-mono-data text-[10px] uppercase tracking-wider bg-[#2F6B4F]/10 text-[#2F6B4F] px-2 py-0.5 rounded-full">Current</span>}
                     </div>
                     <p className="text-sm text-stone-500">{exp.company}</p>
                   </div>
